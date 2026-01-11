@@ -174,3 +174,7 @@
 | `<=`     | Less than or equal to    | `3 <= 3` → `true`     |
 | `===`    | Strictly equal to        | `3 === "3"` → `false` |
 | `!==`    | Strictly not equal to    | `3 !== "3"` → `true`  |
+
+-   Difference btw (==) and (===)
+    -   `==` - only check the value
+    -   `===` - check the value and the data type
