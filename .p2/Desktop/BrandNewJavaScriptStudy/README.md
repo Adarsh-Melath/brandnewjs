@@ -84,3 +84,37 @@
 
         -   it doesn't allow declaration,but reassign
         -   no hoisting is possible because the variable declared with `let` will be in _Temporal Dead Zone_
+
+    -   const
+
+        -   The scope of variables declared with const
+
+            -   Variables declared with const are similar to let in regards to scope. Such variables can have a global, local, or block scope.
+
+                -   example for global,local,block scoped declaration
+
+                    ```javascript
+                    const number = 50;
+
+                    function print() {
+                        const square = number * number;
+
+                        if (number < 60) {
+                            var largerNumber = 80;
+                            const anotherLargerNumber = 100;
+
+                            console.log(square);
+                        }
+
+                        console.log(largerNumber);
+                        console.log(anotherLargerNumber);
+                    }
+
+                    print();
+                    // 2500
+                    // 80
+                    // ReferenceError: anotherLargerNumber is not defined
+                    ```
+
+        -   it doesn't support redeclaration or reassignment
+        -   no hoisting is possible because the variable declared with `const` will be in _Temporal Dead Zone_
