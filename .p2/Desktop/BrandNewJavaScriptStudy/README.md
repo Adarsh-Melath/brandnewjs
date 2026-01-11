@@ -151,3 +151,9 @@
         -   Object
             -   Key-value pairs of collection of data.
             -   Example:let student = {name: "John"};
+
+## Operators
+
+-   Arithmetic
+
+    -   `+` `-` `*` `/` `%` `++` `--` `**`(Exponent)
