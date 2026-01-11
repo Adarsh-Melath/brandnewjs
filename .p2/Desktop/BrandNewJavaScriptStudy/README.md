@@ -175,6 +175,12 @@
 | `===`    | Strictly equal to        | `3 === "3"` → `false` |
 | `!==`    | Strictly not equal to    | `3 !== "3"` → `true`  |
 
--   Difference btw (==) and (===)
-    -   `==` - only check the value
-    -   `===` - check the value and the data type
+-   Difference btw (==) and (===) - `==` - only check the value - `===` - check the value and the data type
+
+-   Logical
+
+| Operator | Syntax                       | Description                                                            |
+| -------- | ---------------------------- | ---------------------------------------------------------------------- | ------------ | --- | ------------ | ----------------------------------------------------------------- |
+| `&&`     | `expression1 && expression2` | Returns `true` only if both `expression1` and `expression2` are `true` |
+| `        |                              | `                                                                      | `expression1 |     | expression2` | Returns `true` if either `expression1` or `expression2` is `true` |
+| `!`      | `!expression`                | Returns `false` if the expression is `true`, and vice versa            |
