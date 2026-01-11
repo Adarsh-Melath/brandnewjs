@@ -20,4 +20,15 @@ greet('Adarsh Melath');
 
 -   Decision making/selection statments
 
-    - if-else 
+    -   if-else
+        ```javascript
+
+              let name = 'Ajay';
+
+              if ((name === 'Adarsh Melath')) {
+              console.log('Hello ' + name);
+              } else {
+              console.log('Hello Guest');
+              }
+
+            ```
