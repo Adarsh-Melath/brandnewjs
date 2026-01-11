@@ -50,4 +50,37 @@
 
         -   It allows for redeclaration and reassignment
         -   variables declared using `var` will be hoisted
-    
+
+    -   let keyword
+
+        -   The scope of variable declared with `let`
+
+            -   Variables declared with let can have a global, local, or block scope. Block scope is for variables declared in a block. A block in JavaScript involves opening and closing curly braces
+
+                -   example for global,local,block scope
+
+                    ```javascript
+                    let number = 50;
+
+                    function print() {
+                        let square = number * number;
+
+                        if (number < 60) {
+                            var largerNumber = 80;
+                            let anotherLargerNumber = 100;
+
+                            console.log(square);
+                        }
+
+                        console.log(largerNumber);
+                        console.log(anotherLargerNumber);
+                    }
+
+                    print();
+                    // 2500
+                    // 80
+                    // ReferenceError: anotherLargerNumber is not defined
+                    ```
+
+        -   it doesn't allow declaration,but reassign
+        -   no hoisting is possible because the variable declared with `let` will be in _Temporal Dead Zone_
