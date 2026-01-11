@@ -118,3 +118,36 @@
 
         -   it doesn't support redeclaration or reassignment
         -   no hoisting is possible because the variable declared with `const` will be in _Temporal Dead Zone_
+
+## Data types( 8 basic data types in JavaScript)
+
+-   primitive
+
+    -   They can hold a single simple value.
+    -   String:
+        -   Textual data.
+        -   Example: 'hello', "hello world!", etc.
+    -   Number:
+
+        -   An integer or a floating-point number.
+        -   Example: 3, 3.234, 3e-2, etc.
+
+    -   BigInt:
+        -   An integer with arbitrary precision.
+        -   Example: 900719925124740999n, 1n, etc.
+    -   Boolean
+        -   Any of two values: true or false.
+    -   undefined
+        -   A data type whose variable is not initialized.
+        -   Example: let a;
+    -   null
+        -   Denotes a null value. let a = null;
+    -   Symbol
+        -   A data type whose instances are unique and immutable.
+        -   Example: let value = Symbol('hello');
+
+-   Non-Primitive
+    -   They can hold multiple values. Objects are non-primitive data types.
+        -   Object
+            -   Key-value pairs of collection of data.
+            -   Example:let student = {name: "John"};
