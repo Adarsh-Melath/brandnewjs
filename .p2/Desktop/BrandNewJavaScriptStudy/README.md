@@ -157,3 +157,6 @@
 -   Arithmetic
 
     -   `+` `-` `*` `/` `%` `++` `--` `**`(Exponent)
+
+-   Assignment
+    -   `=`
