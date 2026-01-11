@@ -21,14 +21,24 @@ greet('Adarsh Melath');
 -   Decision making/selection statments
 
     -   if-else
+
         ```javascript
+        let name = 'Ajay';
 
-              let name = 'Ajay';
+        if (name === 'Adarsh Melath') {
+            console.log('Hello ' + name);
+        } else {
+            console.log('Hello Guest');
+        }
+        ```
 
-              if ((name === 'Adarsh Melath')) {
-              console.log('Hello ' + name);
-              } else {
-              console.log('Hello Guest');
-              }
+-   iterative statments/loop
 
-            ```
+    -   for
+
+        ```javascript
+        // This loop will print numbers from 1 to 5
+        for (var i = 1; i <= 5; i++) {
+            console.log(i);
+        }
+        ```
