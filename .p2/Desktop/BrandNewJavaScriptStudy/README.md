@@ -249,6 +249,38 @@
 
 -   Lexical scope means that a function can use variables that are defined outside it, based on where the function is written in the code.
 
+## Execution Context
+
+-   When JavaScript runs your code, it first creates an execution context. This happens in two phases:
+
+    -   1. Memory Creation Phase
+
+        -   JavaScript scans the code.
+
+        -   Allocates memory for variables and functions.
+
+        -   var variables → initialized as undefined
+
+        -   let and const → allocated memory but not initialized (TDZ)
+
+        -   Function declarations → stored completely in memory
+
+    -   2.  Execution Phase
+
+        -   Code is executed line by line.
+
+        -   Values are assigned to variables.
+
+        -   Functions are executed when called
+
+## What is the Call Stack?
+
+-   To keep the track of all the contexts, including global and functional, the JavaScript engine uses a call stack. A call stack is also known as an 'Execution Context Stack', 'Runtime Stack', or 'Machine Stack'.
+
+-   It uses the LIFO principle (Last-In-First-Out). When the engine first starts executing the script, it creates a global context and pushes it on the stack. Whenever a function is invoked, similarly, the JS engine creates a function stack context for the function and pushes it to the top of the call stack and starts executing it.
+
+-   When execution of the current function is complete, then the JavaScript engine will automatically remove the context from the call stack and it goes back to its parent.
+
 ## Hoisting
 
 -   Hoisting is a JavaScript behavior where variable and function declarations are moved to the top of their scope before code execution.
