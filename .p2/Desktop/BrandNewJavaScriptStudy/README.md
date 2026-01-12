@@ -248,3 +248,37 @@
 ## Lexical Scope
 
 -   Lexical scope means that a function can use variables that are defined outside it, based on where the function is written in the code.
+
+## Hoisting
+
+-   Hoisting is a JavaScript behavior where variable and function declarations are moved to the top of their scope before code execution.
+
+-   Variable Hoisting with var
+
+    -   Variables declared with var are hoisted.
+
+    -   They are initialized with a default value: undefined.
+
+    -   This means you can use them before declaration, but the value will be undefined.
+
+-   Variable Hoisting with let and const
+
+    -   Variables declared with let and const are hoisted.
+
+    -   They are not initialized.
+
+    -   Accessing them before declaration causes a ReferenceError.
+
+-   Function Hoisting
+
+    -   Function declarations are completely hoisted.
+
+    -   You can call a function before it is defined in the code.
+
+-   TDZ (Temporal Dead Zone)
+
+    -   The Temporal Dead Zone is the time between the start of a scope and the point where a let or const variable is declared.
+
+    -   Accessing a let or const variable during this period causes a ReferenceError.
+
+    -   TDZ exists to prevent the use of variables before proper declaration.
