@@ -224,3 +224,27 @@
 -   Assigned to variables: As seen with function expressions.
 -   Passed as arguments to other functions: Functions can be arguments to other functions, allowing for higher-order functions that operate on other functions.
 -   Returned from other functions: Functions can return other functions, enabling the creation of closures
+
+## Scopes
+
+-   refers to the context or environment in which variables are declared and can be accessed.
+
+    -   Global Scope
+
+        -   global scope is the widest scope available. Variables declared in global scope are accessible from anywhere in your code
+
+    -   Local Scope
+
+        -   It is like a private room within a building – it's an enclosed space where variables are only accessible from within that specific room.
+
+    -   Block Scope
+
+        -   It is like a series of nested boxes within a larger container, each with its own set of variables.
+
+## Scope Chain
+
+-   JavaScript looks for variables starting from the current scope and moves outward until it finds them or reaches the global scope.
+
+## Lexical Scope
+
+-   Lexical scope means that a function can use variables that are defined outside it, based on where the function is written in the code.
