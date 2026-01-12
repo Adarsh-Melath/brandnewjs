@@ -184,3 +184,43 @@
 | `&&`     | `expression1 && expression2` | Returns `true` only if both `expression1` and `expression2` are `true` |
 | `        |                              | `                                                                      | `expression1 |     | expression2` | Returns `true` if either `expression1` or `expression2` is `true` |
 | `!`      | `!expression`                | Returns `false` if the expression is `true`, and vice versa            |
+
+## Functions
+
+-   functions are reusable blocks of code designed to perform a specific operation.
+
+    -   Function declaration/Regular Function
+
+        -   A function can be declared using the function keyword.
+
+            ```javascript
+            function greet(name) {
+                return 'Hello ' + name;
+            }
+            ```
+
+        -   This type of function can be called before it is defined.
+
+    -   Function Expression
+
+        -   A function can also be stored in a variable.
+
+            ```javascript
+            const greet = function (name) {
+                return 'Hello ' + name;
+            };
+            ```
+
+    -   Arrow Functions
+
+        -   Arrow functions provide a shorter syntax and are commonly used in modern JavaScript.
+
+        ```javascript
+        const greet = (name) => 'Hello ' + name;
+        ```
+
+## First-Class Functions
+
+-   Assigned to variables: As seen with function expressions.
+-   Passed as arguments to other functions: Functions can be arguments to other functions, allowing for higher-order functions that operate on other functions.
+-   Returned from other functions: Functions can return other functions, enabling the creation of closures

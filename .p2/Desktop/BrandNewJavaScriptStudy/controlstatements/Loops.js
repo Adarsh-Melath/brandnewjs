@@ -89,7 +89,6 @@ console.log(printStudentsName(students));
 //for loop
 const names = ['Adarsh', 'Albin', 'Akhil'];
 
-for (let name of names)
-    {
-        console.log(name);
+for (let name of names) {
+    console.log(name);
 }
