@@ -374,3 +374,9 @@
 | keys()          | Returns an iterator of array keys                          |
 | values()        | Returns an iterator of array values                        |
 | Array.isArray() | Checks if a value is an array                              |
+
+## Object literals
+
+-   object literal is the simplest way to create an object—by defining it directly with curly braces {} and key–value pairs.
+
+
