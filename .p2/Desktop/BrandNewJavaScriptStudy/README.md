@@ -378,5 +378,71 @@
 ## Object literals
 
 -   object literal is the simplest way to create an object—by defining it directly with curly braces {} and key–value pairs.
+-   Best suited for creating single or simple objects.
 
+-   Example:
 
+    ```js
+    const person = {
+        name: 'Alice',
+        age: 25,
+        greet() {
+            console.log('Hello');
+        },
+    };
+    ```
+
+## Object Constructor function
+
+-   An object constructor function is used to create multiple objects with the same properties and methods.
+
+-   It is defined using a function and instantiated using the new keyword.
+
+-   Helps in creating reusable object templates.
+
+-   Example:
+
+    ```js
+    function Person(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    const p1 = new Person('Alice', 25);
+    const p2 = new Person('Bob', 30);
+    ```
+
+## Accessing Object Properties
+
+-   Dot Notation
+
+    -   Access properties using a dot followed by the property name.
+
+    -   Example:
+
+        ```js
+        const person = { name: 'Alice', age: 25 };
+        console.log(person.name); // Output: Alice
+        ```
+
+-   Bracket Notation
+
+    -   Access properties using brackets and a string representing the property name.
+    -   Useful for property names with spaces or special characters.
+    -   Example:
+
+        ```js
+        const person = { name: 'Alice', age: 25 };
+        console.log(person['age']); // Output: 25
+        ```
+
+-   Object destructuring
+    -   A syntax that allows you to extract properties from objects and assign them to variables in a concise way.
+    -   Example:
+
+        ```js
+        const person = { name: 'Alice', age: 25 };
+        const { name, age } = person;
+        console.log(name); // Output: Alice
+        console.log(age); // Output: 25
+        ```

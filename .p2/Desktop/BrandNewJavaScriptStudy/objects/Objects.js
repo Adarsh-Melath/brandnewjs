@@ -1,3 +1,4 @@
+//Object literals
 let name = 'Adarsh';
 let course = 'Java Spring Boot';
 
@@ -46,4 +47,23 @@ function student(naem, course) {
     };
 }
 
-console.log(student(studentName, studentCourse));
+// console.log(student(studentName, studentCourse));
+
+//Object constructor function
+
+function Person(name, age) {
+    this.name = name;
+    this.age = age;
+}
+
+Person.prototype.greet = function () {
+    console.log(
+        `Hello, my name is ${this.name} and I am ${this.age} years old.`
+    );
+};
+
+const person1 = new Person('Adarsh', 25);
+const person2 = new Person('Albin', 26);
+
+person1.greet();
+person2.greet();
