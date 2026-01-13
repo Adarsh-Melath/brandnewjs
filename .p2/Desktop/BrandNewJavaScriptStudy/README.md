@@ -314,3 +314,63 @@
     -   Accessing a let or const variable during this period causes a ReferenceError.
 
     -   TDZ exists to prevent the use of variables before proper declaration.
+
+## Arrays
+
+-   An array is an object that can store multiple values at once.
+
+-   creation of Array
+
+    -   using assignment operator
+
+        ```javascript
+        const names = ['Adarsh', 'Nibras', 'Athul raj'];
+        ```
+
+    -   using new Keyword
+
+        ```javascript
+        const names = new Array('Adarsh', 'Nibras', 'Athul raj');
+        ```
+
+    -   using Array.of()
+
+        ```javascript
+        const names = Array.of('Adarsh', 'Nibras', 'Athul raj');
+        ```
+
+-   Array Methods Table
+
+| Method Name     | Description                                                |
+| --------------- | ---------------------------------------------------------- |
+| push()          | Adds one or more elements to the end of an array           |
+| pop()           | Removes the last element from an array                     |
+| shift()         | Removes the first element from an array                    |
+| unshift()       | Adds one or more elements to the beginning of an array     |
+| concat()        | Merges two or more arrays                                  |
+| join()          | Converts array elements into a string                      |
+| slice()         | Returns a shallow copy of a portion of an array            |
+| splice()        | Adds or removes elements from an array                     |
+| indexOf()       | Returns the first index of a specified element             |
+| lastIndexOf()   | Returns the last index of a specified element              |
+| includes()      | Checks if an array contains a value                        |
+| find()          | Returns the first element that satisfies a condition       |
+| findIndex()     | Returns the index of the first matching element            |
+| forEach()       | Executes a function for each array element                 |
+| map()           | Creates a new array by applying a function to each element |
+| filter()        | Creates a new array with elements that pass a test         |
+| reduce()        | Reduces the array to a single value                        |
+| some()          | Checks if at least one element passes a test               |
+| every()         | Checks if all elements pass a test                         |
+| sort()          | Sorts the array elements                                   |
+| reverse()       | Reverses the array                                         |
+| flat()          | Flattens nested arrays                                     |
+| flatMap()       | Maps and flattens the array                                |
+| fill()          | Fills array elements with a static value                   |
+| copyWithin()    | Copies elements within the array                           |
+| toString()      | Converts array to a string                                 |
+| at()            | Returns element at a specified index                       |
+| entries()       | Returns an iterator of index/value pairs                   |
+| keys()          | Returns an iterator of array keys                          |
+| values()        | Returns an iterator of array values                        |
+| Array.isArray() | Checks if a value is an array                              |

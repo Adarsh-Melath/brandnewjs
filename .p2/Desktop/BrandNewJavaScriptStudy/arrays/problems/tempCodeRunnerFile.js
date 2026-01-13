@@ -1,0 +1,1 @@
+const words = ['apple', 'banana', 'apple', 'orange', 'banana', 'apple'];
