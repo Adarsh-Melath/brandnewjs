@@ -491,4 +491,8 @@
     -   A callback is a function passed as an argument to another function, which is then executed later—usually after some operation is completed.
 
 -   What is a Higher Order Function?
+
     -   A higher order function is a function that takes one or more functions as arguments, or returns a function as its result.
+
+-   Closures
+    -   A closure is a feature in JavaScript where an inner function has access to the outer (enclosing) function's variables and parameters, even after the outer function has returned.
