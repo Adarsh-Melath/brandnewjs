@@ -504,3 +504,7 @@
     -   It is usually used to create a local scope to avoid global pollution.
 
 -   Function parameters
+
+    -   Default parameters: function f(x = 10) {}
+    -   Rest parameters: function f(...args) {}
+    -   Destructuring: function f({ name, age }) {}
