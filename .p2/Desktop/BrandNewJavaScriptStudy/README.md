@@ -499,5 +499,8 @@
     -   A closure is a feature in JavaScript where an inner function has access to the outer (enclosing) function's variables and parameters, even after the outer function has returned.
 
 -   IIFE
+
     -   An IIFE (Immediately Invoked Function Expression) is an idiom in which a JavaScript function runs as soon as it is defined. It is also known as a self-executing anonymous function.
     -   It is usually used to create a local scope to avoid global pollution.
+
+-   Function parameters
