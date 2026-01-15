@@ -514,3 +514,24 @@
 -   A DOM, or Document Object Model, acts as a translator between Javascript and HTML. It’s not a different programming language but a built-in API for Javascript.
 
 -   Javascript cannot understand HTML elements, which is where DOM comes for help. The Document Object Model (DOM) turns illegible HTML and XML elements into objects, making it easier for Javascript to comprehend and access the material.
+
+## Event
+
+-   JavaScript events are actions or occurrences that happen in the browser, such as a user clicking a button, hovering over an element, or a page finishing loading.
+
+## Event Phases
+
+-   1. Event Capturing
+    -   Event capturing is the first phase in the event flow process where the event is captured or detected at the highest level of the DOM hierarchy and then propagates down to the target element. Event capturing allows developers to intercept events before they reach their target, enabling global event handling and delegation. Practical use cases include implementing event delegation, validating user input, and applying consistent event handling across multiple elements.
+
+![Event Capturing](imagesforreadme/eventCapturing.png)
+
+-   2. Event Targeting
+
+    -   Event targeting, also known as the “at target” phase, occurs when the event reaches the target element that triggered it. During the targeting phase, event handlers attached directly to the target element are executed, allowing for specific actions or behaviors to be applied based on the event.
+        ![Event Target](imagesforreadme/eventTarget.png)
+
+-   3. Event Bubbling
+    -   Event bubbling is the final phase in the event flow process where the event, having been processed at the target element, propagates back up through the DOM hierarchy to the root element. Unlike event capturing, which starts from the top of the DOM tree and moves downward, event bubbling starts at the target element and moves upward. Practical implications include simplifying event handling by allowing for more concise code, enabling event delegation, and facilitating the creation of interactive components.
+
+![Event Bubbling](imagesforreadme/eventBubbling.png)
