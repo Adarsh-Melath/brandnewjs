@@ -543,3 +543,77 @@
     -   Event delegation refers to a technique in JavaScript where a single event listener is attached to a parent element rather than individual child elements. This parent element listens for events that bubble up from its child elements. When an event occurs, the parent can act upon it, often identifying the target child element from the event object.
 
     -   Essentially, delegation takes advantage of the event bubbling phase in the DOM (Document Object Model), resulting in more efficient event handling.
+
+## Bom
+
+-   The Browser Object Model (BOM) in JavaScript refers to the set of objects provided by the browser to interact with the browser environment outside of the webpage’s content. While the Document Object Model (DOM) handles the content of a webpage, the BOM allows developers to control the browser itself.
+
+-   Key Components of BOM
+
+    -   window Object
+
+        -   The global object representing the browser window. All BOM properties and methods are accessed through window.
+
+            -   Example:
+
+                ```js
+                console.log(window.innerWidth); // Width of the browser's viewport
+                alert('Hello, BOM!'); // Displays an alert box
+                ```
+
+        -   2.  navigator Object
+
+            -   Provides information about the browser and operating system.
+            -   Example:
+
+                ```js
+                console.log(navigator.userAgent); // Details about the browser and OS
+
+                console.log(navigator.language); // Language setting of the browser
+                ```
+
+        -   3.  screen Object
+
+            -   Gives information about the user's screen properties, such as resolution and color depth.
+            -   Example:
+
+                ```js
+                console.log(screen.width); // Width of the user's screen
+                console.log(screen.height); // Height of the user's screen
+                ```
+
+        -   4.  location Object
+
+            -   Represents the URL of the current page and provides methods to navigate or reload the page.
+            -   Example:
+
+            ```js
+            console.log(location.href); // Current URL
+            location.reload(); // Reload the page
+            location.replace('https://example.com'); // Navigate to a new page
+            ```
+
+        -   5.  history Object
+
+            -   Allows manipulation of the browser's history stack.
+            -   Example:
+
+                    ```js
+                        history.back(); // Go to the previous page
+                        history.forward(); // Go to the next page
+                        console.log(history.length); // Number of entries in the history stack
+                    ```
+
+        -   6.  document Object
+
+            -   While part of the DOM, the document object bridges the BOM and DOM, allowing access to the webpage content.
+            -   Example:
+
+            ```js
+            console.log(document.title); // Current page title
+            document.title = 'New Title'; // Change the title
+            ```
+
+## Timers
+
+-   use setTimeout to delay something, or setInterval to keep it running on a loop.
