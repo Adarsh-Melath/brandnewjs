@@ -617,3 +617,7 @@
 ## Timers
 
 -   use setTimeout to delay something, or setInterval to keep it running on a loop.
+
+## Callback Hell
+
+-   The phenomenon which happens when we nest multiple callbacks within a function is called a callback hell. The shape of the resulting code structure resembles a pyramid and hence callback hell is also called the “pyramid of the doom”.
