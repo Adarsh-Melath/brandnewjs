@@ -621,3 +621,37 @@
 ## Callback Hell
 
 -   The phenomenon which happens when we nest multiple callbacks within a function is called a callback hell. The shape of the resulting code structure resembles a pyramid and hence callback hell is also called the “pyramid of the doom”.
+
+## What is a Promise?
+
+-   A Promise is an object that represents the eventual completion or failure of an asynchronous operation.
+
+    -   A Promise acts as a placeholder for a value that will be available in the future.
+
+-   Promise States
+
+    -   A Promise can be in one of three states:
+
+    -   Pending – Initial state (neither fulfilled nor rejected)
+
+    -   Fulfilled – Operation completed successfully
+
+    -   Rejected – Operation failed
+
+## What is async / await?
+
+-   async / await is syntactic sugar over Promises that makes asynchronous code look and behave like synchronous code.
+
+-   async Keyword
+
+    -   Used before a function
+
+    -   Makes the function always return a Promise
+
+-   await Keyword
+
+    -   Used inside an async function
+
+    -   Pauses execution until the Promise resolves
+
+    -   Returns the resolved value
