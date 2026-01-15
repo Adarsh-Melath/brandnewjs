@@ -655,3 +655,7 @@
     -   Pauses execution until the Promise resolves
 
     -   Returns the resolved value
+
+## Event Loop
+
+-   event loop is responsible for managing the execution of code, collecting and processing events, and executing queued tasks. JavaScript operates in a single-threaded environment, meaning only one piece of code runs at a time. The event loop ensures that tasks are executed in the correct order, enabling asynchronous programming.
