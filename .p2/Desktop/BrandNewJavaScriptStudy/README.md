@@ -535,3 +535,11 @@
     -   Event bubbling is the final phase in the event flow process where the event, having been processed at the target element, propagates back up through the DOM hierarchy to the root element. Unlike event capturing, which starts from the top of the DOM tree and moves downward, event bubbling starts at the target element and moves upward. Practical implications include simplifying event handling by allowing for more concise code, enabling event delegation, and facilitating the creation of interactive components.
 
 ![Event Bubbling](imagesforreadme/eventBubbling.png)
+
+## Event delegation
+
+-   What is Event Delegation?
+
+    -   Event delegation refers to a technique in JavaScript where a single event listener is attached to a parent element rather than individual child elements. This parent element listens for events that bubble up from its child elements. When an event occurs, the parent can act upon it, often identifying the target child element from the event object.
+
+    -   Essentially, delegation takes advantage of the event bubbling phase in the DOM (Document Object Model), resulting in more efficient event handling.
