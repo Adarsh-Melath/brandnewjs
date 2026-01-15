@@ -98,3 +98,20 @@ dog.speaking();
 
 cat.eat();
 cat.speaking();
+
+//static method
+
+class User {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    static printDetails(user) {
+        console.log(`Name: ${user.name}, Age: ${user.age}`);
+    }
+}
+
+const user1 = new User('Adarsh', 18);
+// user1.printDetails();
+User.printDetails(user1);

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .visibility {
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="para">I can disappear</p>
+    <button id="toggle">Hide/Show</button>
+
+    <script>
+        const para = document.querySelector('.para');
+        const button = document.querySelector('#toggle');
+
+        button.addEventListener('click', () => {
+            para.classList.toggle('visibility');
+        })
+    </script>
+</body>
+
+</html>

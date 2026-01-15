@@ -508,3 +508,9 @@
     -   Default parameters: function f(x = 10) {}
     -   Rest parameters: function f(...args) {}
     -   Destructuring: function f({ name, age }) {}
+
+## DOM
+
+-   A DOM, or Document Object Model, acts as a translator between Javascript and HTML. It’s not a different programming language but a built-in API for Javascript.
+
+-   Javascript cannot understand HTML elements, which is where DOM comes for help. The Document Object Model (DOM) turns illegible HTML and XML elements into objects, making it easier for Javascript to comprehend and access the material.
