@@ -4,6 +4,14 @@
 -   It is an interpreted language which means it executes the code line by line.
 -   The data type of the variable is decided at run-time in JavaScript, which is why it is called dynamically typed.
 
+## Js Engine
+
+-   A program or interpreter that understands and executes JavaScript code.
+
+## JavaScript runtime
+
+-   The environment in which the JavaScript code runs and is interpreted by a JavaScript engine.The runtime provides the host objects that JavaScript can operate on and work with.
+
 ## Boss Java vs Slave Js
 
 | Java                                       | JavaScript                            |
