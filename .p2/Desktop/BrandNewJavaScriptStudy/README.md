@@ -1,3 +1,20 @@
+## What is Js
+
+-   JavaScript is a single-threaded language that executes one task at a time.
+-   It is an interpreted language which means it executes the code line by line.
+-   The data type of the variable is decided at run-time in JavaScript, which is why it is called dynamically typed.
+
+## Boss Java vs Slave Js
+
+| Java                                       | JavaScript                            |
+| ------------------------------------------ | ------------------------------------- |
+| Statically typed                           | Dynamically typed                     |
+| Compiled to bytecode                       | Interpreted (JIT-compiled by engines) |
+| Runs on JVM                                | Runs in browser or Node.js            |
+| Used for backend, Android, enterprise apps | Used for web, frontend, and backend   |
+| Strongly object-oriented                   | Prototype-based                       |
+| Requires explicit variable types           | Variable types inferred at runtime    |
+
 ## Comments
 
 -   It is used to explain the code and it will prevent the execution of that code
@@ -663,4 +680,3 @@
 ## Modules
 
 -   A module is just a piece of code in a file that you can call and use from other files. A modular design is the opposite of having all your project's code in one single file.
-
