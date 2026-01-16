@@ -659,3 +659,8 @@
 ## Event Loop
 
 -   event loop is responsible for managing the execution of code, collecting and processing events, and executing queued tasks. JavaScript operates in a single-threaded environment, meaning only one piece of code runs at a time. The event loop ensures that tasks are executed in the correct order, enabling asynchronous programming.
+
+## Modules
+
+-   A module is just a piece of code in a file that you can call and use from other files. A modular design is the opposite of having all your project's code in one single file.
+
