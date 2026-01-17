@@ -376,13 +376,13 @@
           | Includes inherited enumerable properties | Does not include prototype properties |
           | Can be used with plain objects | Cannot be used with plain objects unless iterable |
 
-## Functions
+-   ## Functions
 
--   functions are reusable blocks of code designed to perform a specific operation.
+    -   functions are reusable blocks of code designed to perform a specific operation.
 
-    -   Function declaration/Regular Function
+    **Function declaration/Regular Function**
 
-        -   A function can be declared using the function keyword.
+    -   A function can be declared using the function keyword.
 
             ```javascript
             function greet(name) {
@@ -390,11 +390,11 @@
             }
             ```
 
-        -   This type of function can be called before it is defined.
+    -   This type of function can be called before it is defined.
 
-    -   Function Expression
+    **Function Expression**
 
-        -   A function can also be stored in a variable.
+    -   A function can also be stored in a variable.
 
             ```javascript
             const greet = function (name) {
@@ -402,13 +402,24 @@
             };
             ```
 
-    -   Arrow Functions
+    **Arrow Functions**
 
-        -   Arrow functions provide a shorter syntax and are commonly used in modern JavaScript.
+    -   Arrow functions provide a shorter syntax and are commonly used in modern JavaScript.
 
         ```javascript
         const greet = (name) => 'Hello ' + name;
         ```
+
+    **Regular Function vs Arrow Function**
+
+    | Regular Function                                   | Arrow Function                     |
+    | -------------------------------------------------- | ---------------------------------- |
+    | Has its own `this` context                         | Does not have its own `this`       |
+    | `this` is determined by how the function is called | `this` is lexically inherited      |
+    | Has access to `arguments` object                   | No `arguments` object              |
+    | Can be used as a constructor with `new`            | Cannot be used as a constructor    |
+    | Has its own `super`                                | Inherits `super` from parent scope |
+    | Function is hoisted (function declaration)         | Not hoisted                        |
 
 ## First-Class Functions
 
