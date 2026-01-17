@@ -429,11 +429,15 @@
 
     -   The spread operator (...) expands an iterable (array, string, map, set, object) into individual elements.
 
-## First-Class Functions
+    **First-Class Functions**
 
--   Assigned to variables: As seen with function expressions.
--   Passed as arguments to other functions: Functions can be arguments to other functions, allowing for higher-order functions that operate on other functions.
--   Returned from other functions: Functions can return other functions, enabling the creation of closures
+    -   Assigned to variables: As seen with function expressions.
+    -   Passed as arguments to other functions: Functions can be arguments to other functions, allowing for higher-order functions that operate on other functions.
+    -   Returned from other functions: Functions can return other functions, enabling the creation of closures
+
+    **What is a Higher Order Function?**
+
+    -   A higher order function is a function that takes one or more functions as arguments, or returns a function as its result.
 
 ## Arrays
 
@@ -609,10 +613,6 @@
 -   Callbacks
 
     -   A callback is a function passed as an argument to another function, which is then executed later—usually after some operation is completed.
-
--   What is a Higher Order Function?
-
-    -   A higher order function is a function that takes one or more functions as arguments, or returns a function as its result.
 
 -   Closures
 
