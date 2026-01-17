@@ -20,3 +20,8 @@ switch (color) {
         console.log('Broken Light');
         break;
 }
+
+//ternary operator
+
+const trafficSignal = 'Red';
+console.log(trafficSignal == 'Green' ? 'Go!' : 'Stop!');

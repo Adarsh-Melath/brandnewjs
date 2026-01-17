@@ -362,41 +362,19 @@
 
 ---
 
-    ## Operators
+-   ## Control flow and Loops
 
-    -   Arithmetic
+    **for in vs for of**
 
-        -   `+` `-` `*` `/` `%` `++` `--` `**`(Exponent)
-
-    -   Assignment
-
-        -   `=`
-
-    -   Comparison
-
-    | Operator | Meaning                  | Example               |
-    | -------- | ------------------------ | --------------------- |
-    | `==`     | Equal to                 | `3 == 5` → `false`    |
-    | `!=`     | Not equal to             | `3 != 4` → `true`     |
-    | `>`      | Greater than             | `4 > 4` → `false`     |
-    | `<`      | Less than                | `3 < 3` → `false`     |
-    | `>=`     | Greater than or equal to | `4 >= 4` → `true`     |
-    | `<=`     | Less than or equal to    | `3 <= 3` → `true`     |
-    | `===`    | Strictly equal to        | `3 === "3"` → `false` |
-    | `!==`    | Strictly not equal to    | `3 !== "3"` → `true`  |
-
-    -   Difference btw (==) and (===)
-
-        -   `==` - only check the value
-        -   `===` - check the value and the data type
-
-    -   Logical
-
-    | Operator | Syntax                       | Description                                                            |
-    | -------- | ---------------------------- | ---------------------------------------------------------------------- | ------------ | --- | ------------ | ----------------------------------------------------------------- |
-    | `&&`     | `expression1 && expression2` | Returns `true` only if both `expression1` and `expression2` are `true` |
-    | `        |                              | `                                                                      | `expression1 |     | expression2` | Returns `true` if either `expression1` or `expression2` is `true` |
-    | `!`      | `!expression`                | Returns `false` if the expression is `true`, and vice versa            |
+          | for...in | for...of |
+          |---------|----------|
+          | Iterates over enumerable property keys | Iterates over values of an iterable |
+          | Returns keys (property names or indexes) | Returns actual values |
+          | Best suited for objects | Best suited for arrays and iterables |
+          | Works with objects by default | Works only with iterable objects |
+          | Iterates over array indexes (not recommended) | Iterates directly over array elements |
+          | Includes inherited enumerable properties | Does not include prototype properties |
+          | Can be used with plain objects | Cannot be used with plain objects unless iterable |
 
 ## Functions
 
