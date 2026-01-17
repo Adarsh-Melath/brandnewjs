@@ -411,6 +411,17 @@
     - _Function Context_
         - The method of invocation determines the value of the this keyword in a standard regular function
 
+    **call() apply() bind()**
+
+    | call()                       | apply()                      | bind()                      |
+    | ---------------------------- | ---------------------------- | --------------------------- |
+    | Invokes function immediately | Invokes function immediately | Returns a new function      |
+    | Arguments passed one by one  | Arguments passed as an array | Arguments passed one by one |
+    | `this` binding is temporary  | `this` binding is temporary  | `this` binding is permanent |
+    | Returns function result      | Returns function result      | Returns bound function      |
+    | Best when args are known     | Best when args are in array  | Best for callbacks/events   |
+    | ES5 feature                  | ES5 feature                  | ES5 feature                 |
+
 ## Arrays
 
 - An array is an object that can store multiple values at once.
@@ -670,11 +681,11 @@
             - Allows manipulation of the browser's history stack.
             - Example:
 
-                                      ```js
-                                          history.back(); // Go to the previous page
-                                          history.forward(); // Go to the next page
-                                          console.log(history.length); // Number of entries in the history stack
-                                      ```
+                                          ```js
+                                              history.back(); // Go to the previous page
+                                              history.forward(); // Go to the next page
+                                              console.log(history.length); // Number of entries in the history stack
+                                          ```
 
         -   6.  document Object
             - While part of the DOM, the document object bridges the BOM and DOM, allowing access to the webpage content.
