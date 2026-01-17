@@ -366,15 +366,15 @@
 
     **for in vs for of**
 
-          | for...in | for...of |
-          |---------|----------|
-          | Iterates over enumerable property keys | Iterates over values of an iterable |
-          | Returns keys (property names or indexes) | Returns actual values |
-          | Best suited for objects | Best suited for arrays and iterables |
-          | Works with objects by default | Works only with iterable objects |
-          | Iterates over array indexes (not recommended) | Iterates directly over array elements |
-          | Includes inherited enumerable properties | Does not include prototype properties |
-          | Can be used with plain objects | Cannot be used with plain objects unless iterable |
+    | for...in                                      | for...of                                          |
+    | --------------------------------------------- | ------------------------------------------------- |
+    | Iterates over enumerable property keys        | Iterates over values of an iterable               |
+    | Returns keys (property names or indexes)      | Returns actual values                             |
+    | Best suited for objects                       | Best suited for arrays and iterables              |
+    | Works with objects by default                 | Works only with iterable objects                  |
+    | Iterates over array indexes (not recommended) | Iterates directly over array elements             |
+    | Includes inherited enumerable properties      | Does not include prototype properties             |
+    | Can be used with plain objects                | Cannot be used with plain objects unless iterable |
 
 -   ## Functions
 
@@ -384,11 +384,11 @@
 
     -   A function can be declared using the function keyword.
 
-            ```javascript
-            function greet(name) {
-                return 'Hello ' + name;
-            }
-            ```
+        ```javascript
+        function greet(name) {
+            return 'Hello ' + name;
+        }
+        ```
 
     -   This type of function can be called before it is defined.
 
@@ -396,11 +396,13 @@
 
     -   A function can also be stored in a variable.
 
-            ```javascript
-            const greet = function (name) {
-                return 'Hello ' + name;
-            };
-            ```
+        ```javascript
+        const greet = function (name) {
+            return 'Hello ' + name;
+        };
+        ```
+
+    ````
 
     **Arrow Functions**
 
@@ -420,6 +422,7 @@
     | Can be used as a constructor with `new`            | Cannot be used as a constructor    |
     | Has its own `super`                                | Inherits `super` from parent scope |
     | Function is hoisted (function declaration)         | Not hoisted                        |
+    ````
 
 ## First-Class Functions
 
