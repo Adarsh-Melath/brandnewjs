@@ -463,10 +463,6 @@
             console.log(age); // Output: 25
             ```
 
-        ```
-
-        ```
-
 ## Arrays
 
 - An array is an object that can store multiple values at once.
@@ -693,11 +689,11 @@
             - Allows manipulation of the browser's history stack.
             - Example:
 
-                                                          ```js
-                                                              history.back(); // Go to the previous page
-                                                              history.forward(); // Go to the next page
-                                                              console.log(history.length); // Number of entries in the history stack
-                                                          ```
+                                                            ```js
+                                                                history.back(); // Go to the previous page
+                                                                history.forward(); // Go to the next page
+                                                                console.log(history.length); // Number of entries in the history stack
+                                                            ```
 
         -   6.  document Object
             - While part of the DOM, the document object bridges the BOM and DOM, allowing access to the webpage content.
