@@ -443,6 +443,14 @@
 
     -   A callback is a function passed as an argument to another function, which is then executed later—usually after some operation is completed.
 
+    **Callback Hell**
+
+    -   The phenomenon which happens when we nest multiple callbacks within a function is called a callback hell. The shape of the resulting code structure resembles a pyramid and hence callback hell is also called the “pyramid of the doom”.
+
+    **Function Borrowing**
+
+    -   It means using a method from one object and applying it to another object.
+
 ## Arrays
 
 -   An array is an object that can store multiple values at once.
@@ -737,10 +745,6 @@
 ## Timers
 
 -   use setTimeout to delay something, or setInterval to keep it running on a loop.
-
-## Callback Hell
-
--   The phenomenon which happens when we nest multiple callbacks within a function is called a callback hell. The shape of the resulting code structure resembles a pyramid and hence callback hell is also called the “pyramid of the doom”.
 
 ## What is a Promise?
 
