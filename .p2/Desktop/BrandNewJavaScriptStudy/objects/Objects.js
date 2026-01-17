@@ -1,69 +1,29 @@
-//Object literals
-let name = 'Adarsh';
-let course = 'Java Spring Boot';
+//two ways of defining objects
+
+//1: Using Object literals
 
 const obj1 = {
-    name: name,
-    course: course,
+    name: 'abc',
 };
 
-//we can write same above code like this
-const obj2 = {
-    name,
-    course,
-};
+console.log(obj1);
 
-const obj3 = {
-    [name]: 'Adarsh Melath',
-};
+//new Object() constructor
 
-// console.log(obj3['Adarsh']);
+const obj2 = new Object();
 
-const obj4 = {
-    greet: function (name) {
-        console.log('Hello ' + name);
-    },
-};
+obj2.name = 'abc';
+obj2.age = 18;
+console.log(obj2);
 
-// obj4.greet('Adarsh');
+//removing a property from the obj
+delete obj2.age;
+console.log(obj2);
 
-//the above same code can write like this
+//checking if a property exist or not
 
-const obj5 = {
-    greet(name) {
-        return 'Hello ' + name;
-    },
-};
+console.log(obj2.hasOwnProperty('name'));
+console.log(obj2.hasOwnProperty('age'));
 
-// console.log(obj5.greet('Adarsh'));
 
-let studentName = 'Adarsh';
-let studentCourse = 'Java Spring Boot';
-
-function student(naem, course) {
-    return {
-        name,
-        course,
-    };
-}
-
-// console.log(student(studentName, studentCourse));
-
-//Object constructor function
-
-function Person(name, age) {
-    this.name = name;
-    this.age = age;
-}
-
-Person.prototype.greet = function () {
-    console.log(
-        `Hello, my name is ${this.name} and I am ${this.age} years old.`
-    );
-};
-
-const person1 = new Person('Adarsh', 25);
-const person2 = new Person('Albin', 26);
-
-person1.greet();
-person2.greet();
+console.log('name' in obj2);

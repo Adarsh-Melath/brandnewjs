@@ -422,6 +422,15 @@
     | Best when args are known     | Best when args are in array  | Best for callbacks/events   |
     | ES5 feature                  | ES5 feature                  | ES5 feature                 |
 
+- ## Object and Object Oriented Js
+
+    **Objects and Object literals**
+    - _Object_:
+        - An object is a collection of related data and functions stored as key–value pairs in JavaScript.
+
+    - _Object literal_:
+    - An object literal is the simplest way to create an object in JavaScript using {} with key–value pairs.
+
 ## Arrays
 
 - An array is an object that can store multiple values at once.
@@ -681,11 +690,11 @@
             - Allows manipulation of the browser's history stack.
             - Example:
 
-                                          ```js
-                                              history.back(); // Go to the previous page
-                                              history.forward(); // Go to the next page
-                                              console.log(history.length); // Number of entries in the history stack
-                                          ```
+                                                        ```js
+                                                            history.back(); // Go to the previous page
+                                                            history.forward(); // Go to the next page
+                                                            console.log(history.length); // Number of entries in the history stack
+                                                        ```
 
         -   6.  document Object
             - While part of the DOM, the document object bridges the BOM and DOM, allowing access to the webpage content.
