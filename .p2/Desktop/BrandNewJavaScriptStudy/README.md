@@ -439,6 +439,10 @@
 
     -   A higher order function is a function that takes one or more functions as arguments, or returns a function as its result.
 
+    **Callbacks**
+
+    -   A callback is a function passed as an argument to another function, which is then executed later—usually after some operation is completed.
+
 ## Arrays
 
 -   An array is an object that can store multiple values at once.
@@ -609,10 +613,6 @@
 | `forEach()`          | Iterates over the entire Set in insertion order      | N/A                |
 
 ## Functions and Functional programming
-
--   Callbacks
-
-    -   A callback is a function passed as an argument to another function, which is then executed later—usually after some operation is completed.
 
 -   Closures
 
