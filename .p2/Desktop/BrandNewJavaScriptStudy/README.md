@@ -429,7 +429,43 @@
         - An object is a collection of related data and functions stored as key–value pairs in JavaScript.
 
     - _Object literal_:
-    - An object literal is the simplest way to create an object in JavaScript using {} with key–value pairs.
+        - An object literal is the simplest way to create an object in JavaScript using {} with key–value pairs.
+
+    **Accessing Object Properties**
+    - Dot Notation
+        - Access properties using a dot followed by the property name.
+
+        - Example:
+
+            ```js
+            const person = { name: 'Alice', age: 25 };
+            console.log(person.name); // Output: Alice
+            ```
+
+    - Bracket Notation
+        - Access properties using brackets and a string representing the property name.
+        - Useful for property names with spaces or special characters.
+        - Example:
+
+            ```js
+            const person = { name: 'Alice', age: 25 };
+            console.log(person['age']); // Output: 25
+            ```
+
+    - Object destructuring
+        - A syntax that allows you to extract properties from objects and assign them to variables in a concise way.
+        - Example:
+
+            ```js
+            const person = { name: 'Alice', age: 25 };
+            const { name, age } = person;
+            console.log(name); // Output: Alice
+            console.log(age); // Output: 25
+            ```
+
+        ```
+
+        ```
 
 ## Arrays
 
@@ -526,39 +562,6 @@
     const p1 = new Person('Alice', 25);
     const p2 = new Person('Bob', 30);
     ```
-
-## Accessing Object Properties
-
-- Dot Notation
-    - Access properties using a dot followed by the property name.
-
-    - Example:
-
-        ```js
-        const person = { name: 'Alice', age: 25 };
-        console.log(person.name); // Output: Alice
-        ```
-
-- Bracket Notation
-    - Access properties using brackets and a string representing the property name.
-    - Useful for property names with spaces or special characters.
-    - Example:
-
-        ```js
-        const person = { name: 'Alice', age: 25 };
-        console.log(person['age']); // Output: 25
-        ```
-
-- Object destructuring
-    - A syntax that allows you to extract properties from objects and assign them to variables in a concise way.
-    - Example:
-
-        ```js
-        const person = { name: 'Alice', age: 25 };
-        const { name, age } = person;
-        console.log(name); // Output: Alice
-        console.log(age); // Output: 25
-        ```
 
 ## Map
 
@@ -690,11 +693,11 @@
             - Allows manipulation of the browser's history stack.
             - Example:
 
-                                                        ```js
-                                                            history.back(); // Go to the previous page
-                                                            history.forward(); // Go to the next page
-                                                            console.log(history.length); // Number of entries in the history stack
-                                                        ```
+                                                          ```js
+                                                              history.back(); // Go to the previous page
+                                                              history.forward(); // Go to the next page
+                                                              console.log(history.length); // Number of entries in the history stack
+                                                          ```
 
         -   6.  document Object
             - While part of the DOM, the document object bridges the BOM and DOM, allowing access to the webpage content.
