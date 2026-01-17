@@ -397,6 +397,20 @@
     **What is a Constructor Function?**
     - A constructor function is a special type of function in JavaScript that’s used to create and initialize new objects.
 
+- ## this, Call, Apply, Bind
+
+    **this keyword**
+    - The `this` keyword is a reference to an object, but the object varies based on where and how it is called.
+
+    **What are the Rules that Guide the Behavior of the this keyword?**
+    - _Global Scope_
+        - Whenever the `this` keyword is used outside of any function, it refers to the global object.
+
+        - While the global object is global in the Node.js environment, it's a `window` in the context of a web browser
+
+    - _Function Context_
+        - The method of invocation determines the value of the this keyword in a standard regular function
+
 ## Arrays
 
 - An array is an object that can store multiple values at once.
@@ -656,11 +670,11 @@
             - Allows manipulation of the browser's history stack.
             - Example:
 
-                    ```js
-                        history.back(); // Go to the previous page
-                        history.forward(); // Go to the next page
-                        console.log(history.length); // Number of entries in the history stack
-                    ```
+                                      ```js
+                                          history.back(); // Go to the previous page
+                                          history.forward(); // Go to the next page
+                                          console.log(history.length); // Number of entries in the history stack
+                                      ```
 
         -   6.  document Object
             - While part of the DOM, the document object bridges the BOM and DOM, allowing access to the webpage content.

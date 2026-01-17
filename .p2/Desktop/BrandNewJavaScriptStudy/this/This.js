@@ -1,47 +1,40 @@
-//default binding
+// "this" in global scope
 
-// function greet() {
-//     console.log(this);
-// }
+// console.log(this); //window object in browser but in our vscode's console it will give like :{}
 
-// greet();
+// "this" in functional context
 
-//implicit binding
-// const person = {
-//     name: 'max',
-//     greet() {
-//         console.log(this.name);
-//     },
-// };
+function x() {
+    console.log(this); //undefined in strict mode and in normal mode it will give window object
+}
 
-// person.greet();
+// x();
 
-// explicit binding
-// function greet() {
-//     console.log(this.name);
-// }
+//"this" in object method
 
-// const person1 = {
-//     name: 'Adarsh',
-// };
-
-// const person2 = {
-//     name: 'Fayas',
-// };
-
-// greet.call(person1);
-// greet.apply(person2);
-// const greetings = greet.bind(person1);
-// greetings();
-
-//Arrow function and this
-
-const person = {
-    name: 'Adarsh',
-    greet: function () {
-        const message = () => console.log(this.name);
-        message();
+const club = {
+    name: 'Real Madrid',
+    established: 1902,
+    getDetails: function () {
+        console.log(this); //club object
+        console.log(`${this.name} was established in ${this.established}`);
     },
 };
 
-person.greet();
+// club.getDetails();
+// const full = club.getDetails;
+// full();
+
+//"this" in constructor function
+
+function Country(name, founded) {
+    this.name = name;
+    this.founded = founded;
+    console.log(this)
+    this.info = function () {
+        console.log(`${this.name} was founded in ${this.founded}`);
+    };
+}
+
+const country1 = new Country('India', 1947);
+country1.info();
