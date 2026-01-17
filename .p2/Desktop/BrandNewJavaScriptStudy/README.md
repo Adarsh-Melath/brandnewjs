@@ -421,6 +421,10 @@
     | Has its own `super`                                | Inherits `super` from parent scope |
     | Function is hoisted (function declaration)         | Not hoisted                        |
 
+    **Rest Parameters (...)**
+
+    -   Rest parameters allow a function to accept an indefinite number of arguments and group them into an array.
+
 ## First-Class Functions
 
 -   Assigned to variables: As seen with function expressions.
