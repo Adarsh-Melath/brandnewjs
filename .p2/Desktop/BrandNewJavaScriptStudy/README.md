@@ -1,214 +1,373 @@
-## What is Js
+-   ## JavaScript Foundations
 
--   JavaScript is a single-threaded language that executes one task at a time.
--   It is an interpreted language which means it executes the code line by line.
--   The data type of the variable is decided at run-time in JavaScript, which is why it is called dynamically typed.
+    ## What is Js
 
-## Js Engine
+    -   JavaScript is a single-threaded language that executes one task at a time.
+    -   It is an interpreted language which means it executes the code line by line.
+    -   The data type of the variable is decided at run-time in JavaScript, which is why it is called dynamically typed.
 
--   A program or interpreter that understands and executes JavaScript code.
+    ## Js Engine
 
-## JavaScript runtime
+    -   A program or interpreter that understands and executes JavaScript code.
 
--   The environment in which the JavaScript code runs and is interpreted by a JavaScript engine.The runtime provides the host objects that JavaScript can operate on and work with.
+    ## JavaScript runtime
 
-## Boss Java vs Slave Js
+    -   The environment in which the JavaScript code runs and is interpreted by a JavaScript engine.The runtime provides the host objects that JavaScript can operate on and work with.
 
-| Java                                       | JavaScript                            |
-| ------------------------------------------ | ------------------------------------- |
-| Statically typed                           | Dynamically typed                     |
-| Compiled to bytecode                       | Interpreted (JIT-compiled by engines) |
-| Runs on JVM                                | Runs in browser or Node.js            |
-| Used for backend, Android, enterprise apps | Used for web, frontend, and backend   |
-| Strongly object-oriented                   | Prototype-based                       |
-| Requires explicit variable types           | Variable types inferred at runtime    |
+    ## Async and Synchronous
 
-## Comments
+    -   Asynchronous is a non-blocking architecture, so the execution of one task isn’t dependent on another. Tasks can run simultaneously.
 
--   It is used to explain the code and it will prevent the execution of that code
+    -   Synchronous is a blocking architecture, so the execution of each operation depends on completing the one before it. Each task requires an answer before moving on to the next iteration.
 
--   Single Line Comment(//)
+-   ## Boss Java vs Slave Js
 
--   Multi Line Comment(/\*\*/)
+    | Java                                       | JavaScript                            |
+    | ------------------------------------------ | ------------------------------------- |
+    | Statically typed                           | Dynamically typed                     |
+    | Compiled to bytecode                       | Interpreted (JIT-compiled by engines) |
+    | Runs on JVM                                | Runs in browser or Node.js            |
+    | Used for backend, Android, enterprise apps | Used for web, frontend, and backend   |
+    | Strongly object-oriented                   | Prototype-based                       |
+    | Requires explicit variable types           | Variable types inferred at runtime    |
 
-## Variables
+-   ## Variables Scope & Execution
 
--   A variable is a “named storage” for data.
+    ## Variables
 
--   we can declare a variable using var,let,const
+    -   A variable is a “named storage” for data.
 
-    -   var
+    -   we can declare a variable using var,let,const
 
-        -   The scope of variables declared with `var`
+        -   var
 
-            -   Variables declared with var can have a global or local scope. Global scope is for variables declared outside functions, while local scope is for variables declared inside functions.
+            -   The scope of variables declared with `var`
 
-                -   example for globally declared variable
+                -   Variables declared with var can have a global or local scope. Global scope is for variables declared outside functions, while local scope is for variables declared inside functions.
 
-                    ```javascript
-                    var number = 50;
+                    -   example for globally declared variable
 
-                    function print() {
-                        var square = number * number;
-                        console.log(square);
-                    }
-
-                    console.log(number); // 50
-
-                    print(); // 2500
-                    ```
-
-                -   example for locally declared variable
-
-                    ```javascript
-                    function print() {
+                        ```javascript
                         var number = 50;
-                        var square = number * number;
-                        console.log(square);
-                    }
 
-                    print(); // 2500
-
-                    console.log(number);
-                    // ReferenceError: number is not defined
-                    ```
-
-        -   It allows for redeclaration and reassignment
-        -   variables declared using `var` will be hoisted
-
-    -   let keyword
-
-        -   The scope of variable declared with `let`
-
-            -   Variables declared with let can have a global, local, or block scope. Block scope is for variables declared in a block. A block in JavaScript involves opening and closing curly braces
-
-                -   example for global,local,block scope
-
-                    ```javascript
-                    let number = 50;
-
-                    function print() {
-                        let square = number * number;
-
-                        if (number < 60) {
-                            var largerNumber = 80;
-                            let anotherLargerNumber = 100;
-
+                        function print() {
+                            var square = number * number;
                             console.log(square);
                         }
 
-                        console.log(largerNumber);
-                        console.log(anotherLargerNumber);
-                    }
+                        console.log(number); // 50
 
-                    print();
-                    // 2500
-                    // 80
-                    // ReferenceError: anotherLargerNumber is not defined
-                    ```
+                        print(); // 2500
+                        ```
 
-        -   it doesn't allow declaration,but reassign
-        -   no hoisting is possible because the variable declared with `let` will be in _Temporal Dead Zone_
+                    -   example for locally declared variable
 
-    -   const
-
-        -   The scope of variables declared with const
-
-            -   Variables declared with const are similar to let in regards to scope. Such variables can have a global, local, or block scope.
-
-                -   example for global,local,block scoped declaration
-
-                    ```javascript
-                    const number = 50;
-
-                    function print() {
-                        const square = number * number;
-
-                        if (number < 60) {
-                            var largerNumber = 80;
-                            const anotherLargerNumber = 100;
-
+                        ```javascript
+                        function print() {
+                            var number = 50;
+                            var square = number * number;
                             console.log(square);
                         }
 
-                        console.log(largerNumber);
-                        console.log(anotherLargerNumber);
-                    }
+                        print(); // 2500
 
-                    print();
-                    // 2500
-                    // 80
-                    // ReferenceError: anotherLargerNumber is not defined
-                    ```
+                        console.log(number);
+                        // ReferenceError: number is not defined
+                        ```
 
-        -   it doesn't support redeclaration or reassignment
-        -   no hoisting is possible because the variable declared with `const` will be in _Temporal Dead Zone_
+            -   It allows for redeclaration and reassignment
+            -   variables declared using `var` will be hoisted
 
-## Data types( 8 basic data types in JavaScript)
+        -   let keyword
 
--   primitive
+            -   The scope of variable declared with `let`
 
-    -   They can hold a single simple value.
-    -   String:
-        -   Textual data.
-        -   Example: 'hello', "hello world!", etc.
-    -   Number:
+                -   Variables declared with let can have a global, local, or block scope. Block scope is for variables declared in a block. A block in JavaScript involves opening and closing curly braces
 
-        -   An integer or a floating-point number.
-        -   Example: 3, 3.234, 3e-2, etc.
+                    -   example for global,local,block scope
 
-    -   BigInt:
-        -   An integer with arbitrary precision.
-        -   Example: 900719925124740999n, 1n, etc.
-    -   Boolean
-        -   Any of two values: true or false.
-    -   undefined
-        -   A data type whose variable is not initialized.
-        -   Example: let a;
-    -   null
-        -   Denotes a null value. let a = null;
-    -   Symbol
-        -   A data type whose instances are unique and immutable.
-        -   Example: let value = Symbol('hello');
+                        ```javascript
+                        let number = 50;
 
--   Non-Primitive
-    -   They can hold multiple values. Objects are non-primitive data types.
-        -   Object
-            -   Key-value pairs of collection of data.
-            -   Example:let student = {name: "John"};
+                        function print() {
+                            let square = number * number;
 
-## Operators
+                            if (number < 60) {
+                                var largerNumber = 80;
+                                let anotherLargerNumber = 100;
 
--   Arithmetic
+                                console.log(square);
+                            }
 
-    -   `+` `-` `*` `/` `%` `++` `--` `**`(Exponent)
+                            console.log(largerNumber);
+                            console.log(anotherLargerNumber);
+                        }
 
--   Assignment
+                        print();
+                        // 2500
+                        // 80
+                        // ReferenceError: anotherLargerNumber is not defined
+                        ```
 
-    -   `=`
+            -   it doesn't allow declaration,but reassign
+            -   no hoisting is possible because the variable declared with `let` will be in _Temporal Dead Zone_
 
--   Comparison
+        -   const
 
-| Operator | Meaning                  | Example               |
-| -------- | ------------------------ | --------------------- |
-| `==`     | Equal to                 | `3 == 5` → `false`    |
-| `!=`     | Not equal to             | `3 != 4` → `true`     |
-| `>`      | Greater than             | `4 > 4` → `false`     |
-| `<`      | Less than                | `3 < 3` → `false`     |
-| `>=`     | Greater than or equal to | `4 >= 4` → `true`     |
-| `<=`     | Less than or equal to    | `3 <= 3` → `true`     |
-| `===`    | Strictly equal to        | `3 === "3"` → `false` |
-| `!==`    | Strictly not equal to    | `3 !== "3"` → `true`  |
+            -   The scope of variables declared with const
 
--   Difference btw (==) and (===) - `==` - only check the value - `===` - check the value and the data type
+                -   Variables declared with const are similar to let in regards to scope. Such variables can have a global, local, or block scope.
 
--   Logical
+                    -   example for global,local,block scoped declaration
 
-| Operator | Syntax                       | Description                                                            |
-| -------- | ---------------------------- | ---------------------------------------------------------------------- | ------------ | --- | ------------ | ----------------------------------------------------------------- |
-| `&&`     | `expression1 && expression2` | Returns `true` only if both `expression1` and `expression2` are `true` |
-| `        |                              | `                                                                      | `expression1 |     | expression2` | Returns `true` if either `expression1` or `expression2` is `true` |
-| `!`      | `!expression`                | Returns `false` if the expression is `true`, and vice versa            |
+                        ```javascript
+                        const number = 50;
+
+                        function print() {
+                            const square = number * number;
+
+                            if (number < 60) {
+                                var largerNumber = 80;
+                                const anotherLargerNumber = 100;
+
+                                console.log(square);
+                            }
+
+                            console.log(largerNumber);
+                            console.log(anotherLargerNumber);
+                        }
+
+                        print();
+                        // 2500
+                        // 80
+                        // ReferenceError: anotherLargerNumber is not defined
+                        ```
+
+            -   it doesn't support redeclaration or reassignment
+            -   no hoisting is possible because the variable declared with `const` will be in _Temporal Dead Zone_
+
+    ## Scopes
+
+    -   refers to the context or environment in which variables are declared and can be accessed.
+
+        -   Global Scope
+
+            -   global scope is the widest scope available. Variables declared in global scope are accessible from anywhere in your code
+
+        -   Local Scope
+
+            -   It is like a private room within a building – it's an enclosed space where variables are only accessible from within that specific room.
+
+        -   Block Scope
+
+            -   It is like a series of nested boxes within a larger container, each with its own set of variables.
+
+    ## Scope Chain
+
+    -   JavaScript looks for variables starting from the current scope and moves outward until it finds them or reaches the global scope.
+
+    ## Lexical Scope
+
+    -   Lexical scope means that a function can use variables that are defined outside it, based on where the function is written in the code.
+
+    ## Illegal Shadowing🦉
+
+    -   Besides variable shadowing, there is also a concept known as illegal shadowing.
+
+    -   If you create a variable in a global scope with the let keyword and another variable with the var keyword in a block scope but the exact same name, it will throw an error. This is called illegal shadowing.
+
+    ```js
+    let name = 'Prabir';
+
+    if (true) {
+        var name = 'kumar';
+        console.log(name);
+    }
+
+    console.log(name);
+
+    //uncaught syntax error
+    //it will give error
+    ```
+
+    ## Hoisting
+
+    -   Hoisting is a JavaScript behavior where variable and function declarations are moved to the top of their scope before code execution.
+
+    -   Variable Hoisting with var
+
+        -   Variables declared with var are hoisted.
+
+        -   They are initialized with a default value: undefined.
+
+        -   This means you can use them before declaration, but the value will be undefined.
+
+    -   Variable Hoisting with let and const
+
+        -   Variables declared with let and const are hoisted.
+
+        -   They are not initialized.
+
+        -   Accessing them before declaration causes a ReferenceError.
+
+    -   Function Hoisting
+
+        -   Function declarations are completely hoisted.
+
+        -   You can call a function before it is defined in the code.
+
+    -   TDZ (Temporal Dead Zone)
+
+        -   The Temporal Dead Zone is the time between the start of a scope and the point where a let or const variable is declared.
+
+        -   Accessing a let or const variable during this period causes a ReferenceError.
+
+        -   TDZ exists to prevent the use of variables before proper declaration.
+
+    ## Execution Context
+
+    -   When JavaScript runs your code, it first creates an execution context. This happens in two phases:
+
+        -   1. Memory Creation Phase
+
+            -   JavaScript scans the code.
+
+            -   Allocates memory for variables and functions.
+
+            -   var variables → initialized as undefined
+
+            -   let and const → allocated memory but not initialized (TDZ)
+
+            -   Function declarations → stored completely in memory
+
+        -   2.  Execution Phase
+
+            -   Code is executed line by line.
+
+            -   Values are assigned to variables.
+
+            -   Functions are executed when called
+
+    ## What is the Call Stack?
+
+    -   To keep the track of all the contexts, including global and functional, the JavaScript engine uses a call stack. A call stack is also known as an 'Execution Context Stack', 'Runtime Stack', or 'Machine Stack'.
+
+    -   It uses the LIFO principle (Last-In-First-Out). When the engine first starts executing the script, it creates a global context and pushes it on the stack. Whenever a function is invoked, similarly, the JS engine creates a function stack context for the function and pushes it to the top of the call stack and starts executing it.
+
+    -   When execution of the current function is complete, then the JavaScript engine will automatically remove the context from the call stack and it goes back to its parent.
+
+-   ## Data types and Type System
+
+    ## Primtive vs Non Primitive
+
+    -   primitive(immutable)
+
+        -   They can hold a single simple value.
+
+            -   String:
+                -   Textual data.
+                -   Example: 'hello', "hello world!", etc.
+            -   Number:
+
+                -   An integer or a floating-point number.
+                -   Example: 3, 3.234, 3e-2, etc.
+
+            -   BigInt:
+                -   An integer with arbitrary precision.
+                -   Example: 900719925124740999n, 1n, etc.
+            -   Boolean
+                -   Any of two values: true or false.
+            -   undefined
+                -   A data type whose variable is not initialized.
+                -   Example: let a;
+            -   null
+                -   Denotes a null value. let a = null;
+            -   Symbol
+                -   A data type whose instances are unique and immutable.
+                -   Example: let value = Symbol('hello');
+
+    -   Non-Primitive(immutable)
+
+        -   They can hold multiple values. Objects are non-primitive data types.
+            -   Object
+                -   Key-value pairs of collection of data.
+                -   Example:let student = {name: "John"};
+
+    -   ## Truthy and Falsy Values
+
+        -   Falsy
+            -   false - Boolean false
+            -   0 - The number zero
+            -   "" - An empty string
+            -   null - A special value representing no value or object
+            -   undefined - A variable that has not been assigned a value
+            -   NaN - A special value representing "Not-a-Number"
+        -   Truthy
+            -   Truthy values are all values that are not falsy.
+
+-   ## Type Conversion and Operators
+
+    ## Type Conversion
+
+    -   type conversion is the process of converting data of one type to another.
+
+    -   Implict(type coercion)
+
+    -   explicit(type casting)
+
+    ## `String()` vs `toString()`
+
+    | String()                                         | toString()                             |
+    | ------------------------------------------------ | -------------------------------------- |
+    | Global function                                  | Method on an object’s prototype        |
+    | Performs explicit type conversion                | Converts an existing object to string  |
+    | Works with all data types                        | Fails for `null` and `undefined`       |
+    | Internally calls `ToString()` abstract operation | Depends on the object's implementation |
+    | Can be used without an object                    | Requires a valid object reference      |
+
+    ## The `typeof` Operator
+
+    -   The `typeof` operator is used to determine the type of a variable. It returns a string indicating the type of the operand.
+
+    ## The `instanceof` Operator
+
+    -   The `instanceof` operator checks if an object is an instance of a specific class or constructor function. It examines the prototype chain to determine this relationship.
+
+    ## Operators
+
+    -   Arithmetic
+
+        -   `+` `-` `*` `/` `%` `++` `--` `**`(Exponent)
+
+    -   Assignment
+
+        -   `=`
+
+    -   Comparison
+
+    | Operator | Meaning                  | Example               |
+    | -------- | ------------------------ | --------------------- |
+    | `==`     | Equal to                 | `3 == 5` → `false`    |
+    | `!=`     | Not equal to             | `3 != 4` → `true`     |
+    | `>`      | Greater than             | `4 > 4` → `false`     |
+    | `<`      | Less than                | `3 < 3` → `false`     |
+    | `>=`     | Greater than or equal to | `4 >= 4` → `true`     |
+    | `<=`     | Less than or equal to    | `3 <= 3` → `true`     |
+    | `===`    | Strictly equal to        | `3 === "3"` → `false` |
+    | `!==`    | Strictly not equal to    | `3 !== "3"` → `true`  |
+
+    -   Difference btw (==) and (===)
+
+        -   `==` - only check the value
+        -   `===` - check the value and the data type
+
+    -   Logical
+
+    | Operator | Syntax                       | Description                                                            |
+    | -------- | ---------------------------- | ---------------------------------------------------------------------- | ------------ | --- | ------------ | ----------------------------------------------------------------- |
+    | `&&`     | `expression1 && expression2` | Returns `true` only if both `expression1` and `expression2` are `true` |
+    | `        |                              | `                                                                      | `expression1 |     | expression2` | Returns `true` if either `expression1` or `expression2` is `true` |
+    | `!`      | `!expression`                | Returns `false` if the expression is `true`, and vice versa            |
 
 ## Functions
 
@@ -249,96 +408,6 @@
 -   Assigned to variables: As seen with function expressions.
 -   Passed as arguments to other functions: Functions can be arguments to other functions, allowing for higher-order functions that operate on other functions.
 -   Returned from other functions: Functions can return other functions, enabling the creation of closures
-
-## Scopes
-
--   refers to the context or environment in which variables are declared and can be accessed.
-
-    -   Global Scope
-
-        -   global scope is the widest scope available. Variables declared in global scope are accessible from anywhere in your code
-
-    -   Local Scope
-
-        -   It is like a private room within a building – it's an enclosed space where variables are only accessible from within that specific room.
-
-    -   Block Scope
-
-        -   It is like a series of nested boxes within a larger container, each with its own set of variables.
-
-## Scope Chain
-
--   JavaScript looks for variables starting from the current scope and moves outward until it finds them or reaches the global scope.
-
-## Lexical Scope
-
--   Lexical scope means that a function can use variables that are defined outside it, based on where the function is written in the code.
-
-## Execution Context
-
--   When JavaScript runs your code, it first creates an execution context. This happens in two phases:
-
-    -   1. Memory Creation Phase
-
-        -   JavaScript scans the code.
-
-        -   Allocates memory for variables and functions.
-
-        -   var variables → initialized as undefined
-
-        -   let and const → allocated memory but not initialized (TDZ)
-
-        -   Function declarations → stored completely in memory
-
-    -   2.  Execution Phase
-
-        -   Code is executed line by line.
-
-        -   Values are assigned to variables.
-
-        -   Functions are executed when called
-
-## What is the Call Stack?
-
--   To keep the track of all the contexts, including global and functional, the JavaScript engine uses a call stack. A call stack is also known as an 'Execution Context Stack', 'Runtime Stack', or 'Machine Stack'.
-
--   It uses the LIFO principle (Last-In-First-Out). When the engine first starts executing the script, it creates a global context and pushes it on the stack. Whenever a function is invoked, similarly, the JS engine creates a function stack context for the function and pushes it to the top of the call stack and starts executing it.
-
--   When execution of the current function is complete, then the JavaScript engine will automatically remove the context from the call stack and it goes back to its parent.
-
-## Hoisting
-
--   Hoisting is a JavaScript behavior where variable and function declarations are moved to the top of their scope before code execution.
-
--   Variable Hoisting with var
-
-    -   Variables declared with var are hoisted.
-
-    -   They are initialized with a default value: undefined.
-
-    -   This means you can use them before declaration, but the value will be undefined.
-
--   Variable Hoisting with let and const
-
-    -   Variables declared with let and const are hoisted.
-
-    -   They are not initialized.
-
-    -   Accessing them before declaration causes a ReferenceError.
-
--   Function Hoisting
-
-    -   Function declarations are completely hoisted.
-
-    -   You can call a function before it is defined in the code.
-
--   TDZ (Temporal Dead Zone)
-
-    -   The Temporal Dead Zone is the time between the start of a scope and the point where a let or const variable is declared.
-
-    -   Accessing a let or const variable during this period causes a ReferenceError.
-
-    -   TDZ exists to prevent the use of variables before proper declaration.
 
 ## Arrays
 
