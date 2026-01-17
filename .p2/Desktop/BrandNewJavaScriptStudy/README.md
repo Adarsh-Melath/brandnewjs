@@ -352,6 +352,14 @@
     -   The `||` Operator
         -   The `||` operator returns the first truthy operand, or the last falsy operand if all operands are falsy.
 
+    **Nullish Coalescing**
+
+    -   The nullish coalescing operator (`??`) provides a default value only when a variable is `null` or `undefined`.
+
+    **!!**
+
+    -   `!!` is the double NOT operator used to explicitly convert any value to a boolean (true or false)
+
 ---
 
     ## Operators
