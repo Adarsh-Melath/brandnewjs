@@ -402,8 +402,6 @@
         };
         ```
 
-    ````
-
     **Arrow Functions**
 
     -   Arrow functions provide a shorter syntax and are commonly used in modern JavaScript.
@@ -422,7 +420,10 @@
     | Can be used as a constructor with `new`            | Cannot be used as a constructor    |
     | Has its own `super`                                | Inherits `super` from parent scope |
     | Function is hoisted (function declaration)         | Not hoisted                        |
-    ````
+
+    ```
+
+    ```
 
 ## First-Class Functions
 
