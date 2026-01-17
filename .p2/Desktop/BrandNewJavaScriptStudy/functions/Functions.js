@@ -27,28 +27,3 @@ console.log(sum(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
 
 // const returnName = (name) => name;
 // console.log(returnName('Adarsh'));
-
-//IIFE
-
-// (function () {
-//     console.log('I am an IIFE');
-// })();
-
-// Generator functions
-
-// function* fibonacciSequence() {
-//     let a = 0;
-//     let b = 1;
-//     while (true) {
-//         yield a;
-//         let next = a + b;
-//         a = b;
-//         b = next;
-//     }
-// }
-
-// const fibonacciGen = fibonacciSequence();
-// console.log(fibonacciGen.next().value);
-// console.log(fibonacciGen.next().value);
-// console.log(fibonacciGen.next().value);
-// console.log(fibonacciGen.next().value);
