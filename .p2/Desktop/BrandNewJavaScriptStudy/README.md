@@ -425,6 +425,10 @@
 
     -   Rest parameters allow a function to accept an indefinite number of arguments and group them into an array.
 
+    **Spread Operator (...)**
+
+    -   The spread operator (...) expands an iterable (array, string, map, set, object) into individual elements.
+
 ## First-Class Functions
 
 -   Assigned to variables: As seen with function expressions.
