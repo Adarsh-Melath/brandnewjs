@@ -20,6 +20,8 @@
 
     -   Synchronous is a blocking architecture, so the execution of each operation depends on completing the one before it. Each task requires an answer before moving on to the next iteration.
 
+---
+
 -   ## Boss Java vs Slave Js
 
     | Java                                       | JavaScript                            |
@@ -30,6 +32,8 @@
     | Used for backend, Android, enterprise apps | Used for web, frontend, and backend   |
     | Strongly object-oriented                   | Prototype-based                       |
     | Requires explicit variable types           | Variable types inferred at runtime    |
+
+---
 
 -   ## Variables Scope & Execution
 
@@ -256,6 +260,8 @@
 
     -   When execution of the current function is complete, then the JavaScript engine will automatically remove the context from the call stack and it goes back to its parent.
 
+---
+
 -   ## Data types and Type System
 
     ## Primtive vs Non Primitive
@@ -305,6 +311,8 @@
         -   Truthy
             -   Truthy values are all values that are not falsy.
 
+---
+
 -   ## Type Conversion and Operators
 
     ## Type Conversion
@@ -332,6 +340,8 @@
     ## The `instanceof` Operator
 
     -   The `instanceof` operator checks if an object is an instance of a specific class or constructor function. It examines the prototype chain to determine this relationship.
+
+---
 
     ## Operators
 
