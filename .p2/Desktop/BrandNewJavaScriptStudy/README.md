@@ -452,16 +452,18 @@
             console.log(person['age']); // Output: 25
             ```
 
-    - Object destructuring
-        - A syntax that allows you to extract properties from objects and assign them to variables in a concise way.
-        - Example:
+    - Object destructuring - A syntax that allows you to extract properties from objects and assign them to variables in a concise way. - Example:
 
-            ```js
-            const person = { name: 'Alice', age: 25 };
-            const { name, age } = person;
-            console.log(name); // Output: Alice
-            console.log(age); // Output: 25
-            ```
+                ```js
+                const person = { name: 'Alice', age: 25 };
+                const { name, age } = person;
+                console.log(name); // Output: Alice
+                console.log(age); // Output: 25
+                ```
+
+        **classes**
+
+    - A class in JavaScript is a blueprint for creating objects with shared properties and methods. Think of it like a template for an object.
 
 ## Arrays
 
@@ -689,11 +691,11 @@
             - Allows manipulation of the browser's history stack.
             - Example:
 
-                                                            ```js
-                                                                history.back(); // Go to the previous page
-                                                                history.forward(); // Go to the next page
-                                                                console.log(history.length); // Number of entries in the history stack
-                                                            ```
+                                                              ```js
+                                                                  history.back(); // Go to the previous page
+                                                                  history.forward(); // Go to the next page
+                                                                  console.log(history.length); // Number of entries in the history stack
+                                                              ```
 
         -   6.  document Object
             - While part of the DOM, the document object bridges the BOM and DOM, allowing access to the webpage content.
