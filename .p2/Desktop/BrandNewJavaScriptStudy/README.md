@@ -341,6 +341,17 @@
 
     -   The `instanceof` operator checks if an object is an instance of a specific class or constructor function. It examines the prototype chain to determine this relationship.
 
+    **What is Short-Circuiting?**
+
+    -   Short-circuiting is a behavior exhibited by logical operators (`&&`, `||`) where the evaluation of the second operand is skipped if the outcome can be determined by evaluating the first operand alone.
+
+    -   The `&&` Operator
+
+        -   The `&&` operator returns the first falsy operand, or the last truthy operand if all operands are truthy.
+
+    -   The `||` Operator
+        -   The `||` operator returns the first truthy operand, or the last falsy operand if all operands are falsy.
+
 ---
 
     ## Operators
