@@ -564,9 +564,12 @@
     **starvation**
     - starvation refers to a situation where a task is perpetually delayed because the event loop is constantly busy with other tasks—usually of higher priority or those scheduled more frequently.
 
-    - starvation can occur when:
-        - Long-running synchronous code blocks the event loop.
-        - Microtasks (Promises, MutationObservers, etc.) continuously prevent macrotasks (like setTimeout, setInterval) from executing.
+    - starvation can occur when: - Long-running synchronous code blocks the event loop. - Microtasks (Promises, MutationObservers, etc.) continuously prevent macrotasks (like setTimeout, setInterval) from executing.
+
+    **Timers**
+    - The setTimeout function is used to schedule the execution of a function after a specified delay.
+
+    - setInterval is used to repeatedly execute a function at a fixed interval.
 
 ## Map
 
@@ -684,11 +687,11 @@
             - Allows manipulation of the browser's history stack.
             - Example:
 
-                                                                                                                                        ```js
-                                                                                                                                            history.back(); // Go to the previous page
-                                                                                                                                            history.forward(); // Go to the next page
-                                                                                                                                            console.log(history.length); // Number of entries in the history stack
-                                                                                                                                        ```
+                                                                                                                                              ```js
+                                                                                                                                                  history.back(); // Go to the previous page
+                                                                                                                                                  history.forward(); // Go to the next page
+                                                                                                                                                  console.log(history.length); // Number of entries in the history stack
+                                                                                                                                              ```
 
         -   6.  document Object
             - While part of the DOM, the document object bridges the BOM and DOM, allowing access to the webpage content.
