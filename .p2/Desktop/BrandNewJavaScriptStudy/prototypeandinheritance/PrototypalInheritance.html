@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // function Car(name) {
+        //     this.name = name
+        // }
+
+        // Car.prototype.drive = function () {
+        //     console.log(`${this.name} is driving`);
+        // }
+
+        // const car1=new Car('BMW');
+        // car1.drive();
+
+        function Rectangle(breadth, length) {
+            this.length = length;
+            this.breadth = breadth;
+        }
+
+        Rectangle.prototype.area = function () {
+            return this.length * this.breadth;
+        }
+
+        // const rect1 = new Rectangle(3, 4);
+        // console.log(rect1.length);
+        // console.log(rect1.breadth);
+        // console.log(rect1.area());
+
+        function Square(length) {
+            this.length = this.breadth = length
+        }
+
+        Square.prototype=Object.create(Rectangle.prototype);
+
+        const square=new Square(4);
+        console.log(square.area());
+    </script>
+</body>
+
+</html>
