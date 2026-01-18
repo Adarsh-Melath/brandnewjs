@@ -121,3 +121,7 @@ const arr1 = ['mon', 'tues', ['wed', 'thurs', ['fri', 'sat']], 'sun'];
 
 const arr2 = [1, 2, [4, 5], 6, 7, [8]];
 console.log(arr2.flatMap((number)=> number));
+
+//sorting 
+
+console.log(numbers.sort((a, b) => a - b));
