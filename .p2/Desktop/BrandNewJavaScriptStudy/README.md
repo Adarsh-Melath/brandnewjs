@@ -465,6 +465,17 @@
 
     - A class in JavaScript is a blueprint for creating objects with shared properties and methods. Think of it like a template for an object.
 
+- ## Prototypes & Inheritance
+
+    **Prototype**
+    - Every object in JavaScript can be linked to a prototype object which is the mechanism through which inheritance is provided.
+
+    - Properties and methods added to a prototype are shared across all instances.
+    - This mechanism helps optimize memory usage and enables inheritance.
+
+    **Prototype Chaining**
+    - In JavaScript, the prototype chain is the mechanism where an object looks for a property or method in itself first, and if not found, it searches in its prototype, then the prototype’s prototype, and so on until null.
+
 ## Arrays
 
 - An array is an object that can store multiple values at once.
@@ -691,11 +702,11 @@
             - Allows manipulation of the browser's history stack.
             - Example:
 
-                                                              ```js
-                                                                  history.back(); // Go to the previous page
-                                                                  history.forward(); // Go to the next page
-                                                                  console.log(history.length); // Number of entries in the history stack
-                                                              ```
+                                                                          ```js
+                                                                              history.back(); // Go to the previous page
+                                                                              history.forward(); // Go to the next page
+                                                                              console.log(history.length); // Number of entries in the history stack
+                                                                          ```
 
         -   6.  document Object
             - While part of the DOM, the document object bridges the BOM and DOM, allowing access to the webpage content.
