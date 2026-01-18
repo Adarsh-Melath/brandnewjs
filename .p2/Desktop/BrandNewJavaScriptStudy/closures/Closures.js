@@ -1,24 +1,23 @@
+//closure example
 // function outerFunction() {
-//     let outerVariable = 'I am from the outer function';
-//     function innerFunction() {
-//         console.log(outerVariable);
-//     }
+//     let x = 10;
 
-//     innerFunction();
+//     return function innerFunction() {
+//         console.log(x);
+//     };
 // }
 
-// outerFunction();
+// const innerFunction = outerFunction();
+// innerFunction();
 
-//closure example
-function outerFunction() {
-    let outerVariable = 'I am Outer Variable';
-
-    function innerFunction() {
-        console.log(outerVariable);
-    }
-
-    return innerFunction;
+function makeAdder(x) {
+    return function (y) {
+        return x + y;
+    };
 }
 
-const innerFunction = outerFunction();
-innerFunction();
+const add5 = makeAdder(5);
+const add10 = makeAdder(10);
+
+console.log(add5(2));
+console.log(add10(2));
