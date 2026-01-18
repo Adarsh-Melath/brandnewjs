@@ -549,6 +549,10 @@
     **closures**
     - A closure is the combination of a function bundled together (enclosed) with references to its surrounding state (the lexical environment). In other words, a closure gives you access to an outer function’s scope from an inner function.
 
+    **Use case of Closure**
+    - Data encapsulation and private variables
+    - Event handlers with preserved state
+
 ## Map
 
 - A Map is a collection of keyed data items, similar to an object. However, the key difference (pun intended) is that in a Map, keys can be any type, not just strings. This means you can use objects, functions, and other data types as keys in a Map.
@@ -679,11 +683,11 @@
             - Allows manipulation of the browser's history stack.
             - Example:
 
-                                                                                                              ```js
-                                                                                                                  history.back(); // Go to the previous page
-                                                                                                                  history.forward(); // Go to the next page
-                                                                                                                  console.log(history.length); // Number of entries in the history stack
-                                                                                                              ```
+                                                                                                                    ```js
+                                                                                                                        history.back(); // Go to the previous page
+                                                                                                                        history.forward(); // Go to the next page
+                                                                                                                        console.log(history.length); // Number of entries in the history stack
+                                                                                                                    ```
 
         -   6.  document Object
             - While part of the DOM, the document object bridges the BOM and DOM, allowing access to the webpage content.
