@@ -553,6 +553,21 @@
     - Data encapsulation and private variables
     - Event handlers with preserved state
 
+- ## Asynchronous JavaScript
+
+    **Web API(s)**
+    - A web API is an application programming interface for web.
+
+    **Event Loop**
+    - event loop is responsible for managing the execution of ecod, collecting and processing events, and executing queued tasks. JavaScript operates in a single-threaded environment, meaning only one piece of code runs at a time. The event loop ensures that tasks are executed in the correct order, enabling asynchronous programming.
+
+    **starvation**
+    - starvation refers to a situation where a task is perpetually delayed because the event loop is constantly busy with other tasks—usually of higher priority or those scheduled more frequently.
+
+    - starvation can occur when:
+        - Long-running synchronous code blocks the event loop.
+        - Microtasks (Promises, MutationObservers, etc.) continuously prevent macrotasks (like setTimeout, setInterval) from executing.
+
 ## Map
 
 - A Map is a collection of keyed data items, similar to an object. However, the key difference (pun intended) is that in a Map, keys can be any type, not just strings. This means you can use objects, functions, and other data types as keys in a Map.
@@ -588,20 +603,6 @@
 | `entries()`          | Returns all values in a Set as `[value, value]`      | SetIterator object |
 | `values()`           | Returns all elements in a Set (same as `keys()`)     | SetIterator object |
 | `forEach()`          | Iterates over the entire Set in insertion order      | N/A                |
-
-## Functions and Functional programming
-
-- Closures
-    - A closure is a feature in JavaScript where an inner function has access to the outer (enclosing) function's variables and parameters, even after the outer function has returned.
-
-- IIFE
-    - An IIFE (Immediately Invoked Function Expression) is an idiom in which a JavaScript function runs as soon as it is defined. It is also known as a self-executing anonymous function.
-    - It is usually used to create a local scope to avoid global pollution.
-
-- Function parameters
-    - Default parameters: function f(x = 10) {}
-    - Rest parameters: function f(...args) {}
-    - Destructuring: function f({ name, age }) {}
 
 ## DOM
 
@@ -683,11 +684,11 @@
             - Allows manipulation of the browser's history stack.
             - Example:
 
-                                                                                                                    ```js
-                                                                                                                        history.back(); // Go to the previous page
-                                                                                                                        history.forward(); // Go to the next page
-                                                                                                                        console.log(history.length); // Number of entries in the history stack
-                                                                                                                    ```
+                                                                                                                                        ```js
+                                                                                                                                            history.back(); // Go to the previous page
+                                                                                                                                            history.forward(); // Go to the next page
+                                                                                                                                            console.log(history.length); // Number of entries in the history stack
+                                                                                                                                        ```
 
         -   6.  document Object
             - While part of the DOM, the document object bridges the BOM and DOM, allowing access to the webpage content.
@@ -731,10 +732,6 @@
     - Pauses execution until the Promise resolves
 
     - Returns the resolved value
-
-## Event Loop
-
-- event loop is responsible for managing the execution of code, collecting and processing events, and executing queued tasks. JavaScript operates in a single-threaded environment, meaning only one piece of code runs at a time. The event loop ensures that tasks are executed in the correct order, enabling asynchronous programming.
 
 ## Modules
 
