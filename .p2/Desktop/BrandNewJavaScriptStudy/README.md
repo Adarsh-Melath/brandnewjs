@@ -579,6 +579,20 @@
 
     ![working of Promise](/promisesandasyncawait/images/wotkingOfPromise.png)
 
+    **Promise's Methods**
+
+    | Method                         | Description                                                                             |
+    | ------------------------------ | --------------------------------------------------------------------------------------- |
+    | `Promise.all(iterable)`        | Waits for **all promises to resolve** or rejects immediately if **any promise rejects** |
+    | `Promise.allSettled(iterable)` | Waits until **all promises are settled** (fulfilled or rejected)                        |
+    | `Promise.any(iterable)`        | Resolves as soon as **any one promise fulfills**; rejects if **all promises reject**    |
+    | `Promise.race(iterable)`       | Settles as soon as **any promise resolves or rejects**                                  |
+    | `Promise.resolve(value)`       | Returns a promise **resolved with the given value**                                     |
+    | `Promise.reject(reason)`       | Returns a promise **rejected with the given reason**                                    |
+    | `.then(onFulfilled)`           | Appends a **fulfilled handler callback**                                                |
+    | `.catch(onRejected)`           | Appends a **rejection handler callback**                                                |
+    | `.finally(onFinally)`          | Appends a handler that runs **regardless of resolve or reject**                         |
+
 ## Map
 
 - A Map is a collection of keyed data items, similar to an object. However, the key difference (pun intended) is that in a Map, keys can be any type, not just strings. This means you can use objects, functions, and other data types as keys in a Map.
@@ -695,11 +709,11 @@
             - Allows manipulation of the browser's history stack.
             - Example:
 
-                                                                                                                                                    ```js
-                                                                                                                                                        history.back(); // Go to the previous page
-                                                                                                                                                        history.forward(); // Go to the next page
-                                                                                                                                                        console.log(history.length); // Number of entries in the history stack
-                                                                                                                                                    ```
+                                                                                                                                                      ```js
+                                                                                                                                                          history.back(); // Go to the previous page
+                                                                                                                                                          history.forward(); // Go to the next page
+                                                                                                                                                          console.log(history.length); // Number of entries in the history stack
+                                                                                                                                                      ```
 
         -   6.  document Object
             - While part of the DOM, the document object bridges the BOM and DOM, allowing access to the webpage content.
