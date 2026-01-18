@@ -479,101 +479,63 @@
     **Prototype Chaining**
     - In JavaScript, the prototype chain is the mechanism where an object looks for a property or method in itself first, and if not found, it searches in its prototype, then the prototype’s prototype, and so on until null.
 
-## Arrays
+- ## Arrays and Array Methods
+    - An array is an object that can store multiple values at once.
 
-- An array is an object that can store multiple values at once.
+    - creation of Array
+        - using assignment operator
 
-- creation of Array
-    - using assignment operator
+            ```javascript
+            const names = ['Adarsh', 'Nibras', 'Athul raj'];
+            ```
 
-        ```javascript
-        const names = ['Adarsh', 'Nibras', 'Athul raj'];
-        ```
+        - using new Keyword
 
-    - using new Keyword
+            ```javascript
+            const names = new Array('Adarsh', 'Nibras', 'Athul raj');
+            ```
 
-        ```javascript
-        const names = new Array('Adarsh', 'Nibras', 'Athul raj');
-        ```
+        - using Array.of()
 
-    - using Array.of()
+            ```javascript
+            const names = Array.of('Adarsh', 'Nibras', 'Athul raj');
+            ```
 
-        ```javascript
-        const names = Array.of('Adarsh', 'Nibras', 'Athul raj');
-        ```
+    - Array Methods Table
 
-- Array Methods Table
-
-| Method Name     | Description                                                |
-| --------------- | ---------------------------------------------------------- |
-| push()          | Adds one or more elements to the end of an array           |
-| pop()           | Removes the last element from an array                     |
-| shift()         | Removes the first element from an array                    |
-| unshift()       | Adds one or more elements to the beginning of an array     |
-| concat()        | Merges two or more arrays                                  |
-| join()          | Converts array elements into a string                      |
-| slice()         | Returns a shallow copy of a portion of an array            |
-| splice()        | Adds or removes elements from an array                     |
-| indexOf()       | Returns the first index of a specified element             |
-| lastIndexOf()   | Returns the last index of a specified element              |
-| includes()      | Checks if an array contains a value                        |
-| find()          | Returns the first element that satisfies a condition       |
-| findIndex()     | Returns the index of the first matching element            |
-| forEach()       | Executes a function for each array element                 |
-| map()           | Creates a new array by applying a function to each element |
-| filter()        | Creates a new array with elements that pass a test         |
-| reduce()        | Reduces the array to a single value                        |
-| some()          | Checks if at least one element passes a test               |
-| every()         | Checks if all elements pass a test                         |
-| sort()          | Sorts the array elements                                   |
-| reverse()       | Reverses the array                                         |
-| flat()          | Flattens nested arrays                                     |
-| flatMap()       | Maps and flattens the array                                |
-| fill()          | Fills array elements with a static value                   |
-| copyWithin()    | Copies elements within the array                           |
-| toString()      | Converts array to a string                                 |
-| at()            | Returns element at a specified index                       |
-| entries()       | Returns an iterator of index/value pairs                   |
-| keys()          | Returns an iterator of array keys                          |
-| values()        | Returns an iterator of array values                        |
-| Array.isArray() | Checks if a value is an array                              |
-
-## Object literals
-
-- object literal is the simplest way to create an object—by defining it directly with curly braces {} and key–value pairs.
-- Best suited for creating single or simple objects.
-
-- Example:
-
-    ```js
-    const person = {
-        name: 'Alice',
-        age: 25,
-        greet() {
-            console.log('Hello');
-        },
-    };
-    ```
-
-## Object Constructor function
-
-- An object constructor function is used to create multiple objects with the same properties and methods.
-
-- It is defined using a function and instantiated using the new keyword.
-
-- Helps in creating reusable object templates.
-
-- Example:
-
-    ```js
-    function Person(name, age) {
-        this.name = name;
-        this.age = age;
-    }
-
-    const p1 = new Person('Alice', 25);
-    const p2 = new Person('Bob', 30);
-    ```
+    | Method Name     | Description                                                |
+    | --------------- | ---------------------------------------------------------- |
+    | push()          | Adds one or more elements to the end of an array           |
+    | pop()           | Removes the last element from an array                     |
+    | shift()         | Removes the first element from an array                    |
+    | unshift()       | Adds one or more elements to the beginning of an array     |
+    | concat()        | Merges two or more arrays                                  |
+    | join()          | Converts array elements into a string                      |
+    | slice()         | Returns a shallow copy of a portion of an array            |
+    | splice()        | Adds or removes elements from an array                     |
+    | indexOf()       | Returns the first index of a specified element             |
+    | lastIndexOf()   | Returns the last index of a specified element              |
+    | includes()      | Checks if an array contains a value                        |
+    | find()          | Returns the first element that satisfies a condition       |
+    | findIndex()     | Returns the index of the first matching element            |
+    | forEach()       | Executes a function for each array element                 |
+    | map()           | Creates a new array by applying a function to each element |
+    | filter()        | Creates a new array with elements that pass a test         |
+    | reduce()        | Reduces the array to a single value                        |
+    | some()          | Checks if at least one element passes a test               |
+    | every()         | Checks if all elements pass a test                         |
+    | sort()          | Sorts the array elements                                   |
+    | reverse()       | Reverses the array                                         |
+    | flat()          | Flattens nested arrays                                     |
+    | flatMap()       | Maps and flattens the array                                |
+    | fill()          | Fills array elements with a static value                   |
+    | copyWithin()    | Copies elements within the array                           |
+    | toString()      | Converts array to a string                                 |
+    | at()            | Returns element at a specified index                       |
+    | entries()       | Returns an iterator of index/value pairs                   |
+    | keys()          | Returns an iterator of array keys                          |
+    | values()        | Returns an iterator of array values                        |
+    | Array.isArray() | Checks if a value is an array                              |
 
 ## Map
 
@@ -705,11 +667,11 @@
             - Allows manipulation of the browser's history stack.
             - Example:
 
-                                                                                ```js
-                                                                                    history.back(); // Go to the previous page
-                                                                                    history.forward(); // Go to the next page
-                                                                                    console.log(history.length); // Number of entries in the history stack
-                                                                                ```
+                                                                                        ```js
+                                                                                            history.back(); // Go to the previous page
+                                                                                            history.forward(); // Go to the next page
+                                                                                            console.log(history.length); // Number of entries in the history stack
+                                                                                        ```
 
         -   6.  document Object
             - While part of the DOM, the document object bridges the BOM and DOM, allowing access to the webpage content.
