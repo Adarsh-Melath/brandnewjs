@@ -454,12 +454,12 @@
 
     - Object destructuring - A syntax that allows you to extract properties from objects and assign them to variables in a concise way. - Example:
 
-                ```js
-                const person = { name: 'Alice', age: 25 };
-                const { name, age } = person;
-                console.log(name); // Output: Alice
-                console.log(age); // Output: 25
-                ```
+        ```js
+        const person = { name: 'Alice', age: 25 };
+        const { name, age } = person;
+        console.log(name); // Output: Alice
+        console.log(age); // Output: 25
+        ```
 
         **classes**
 
