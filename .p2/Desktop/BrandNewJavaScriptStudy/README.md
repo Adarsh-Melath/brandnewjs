@@ -577,6 +577,8 @@
     - A promise is an object that may produce a single value some time in the future.
     - A promise may be in one of 3 possible states: fulfilled, rejected, or pending.
 
+    ![working of Promise](/promisesandasyncawait/images/wotkingOfPromise.png)
+
 ## Map
 
 - A Map is a collection of keyed data items, similar to an object. However, the key difference (pun intended) is that in a Map, keys can be any type, not just strings. This means you can use objects, functions, and other data types as keys in a Map.
