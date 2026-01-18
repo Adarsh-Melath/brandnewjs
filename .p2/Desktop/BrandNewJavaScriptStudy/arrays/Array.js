@@ -73,6 +73,51 @@ const programmingLanguages = [
 //slice
 const names = ['John', 'Jane', 'Jeniffer', 'David', 'Dave'];
 
-console.log(names);
-console.log(names.slice(1, 4));
-console.log(names);
+// console.log(names);
+// console.log(names.slice(1, 4));
+// console.log(names);
+
+//higher order function of array
+//map
+const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const square = numbers.map((number) => number * number);
+// console.log(square);
+//filter
+const even = numbers.filter((number) => number % 2 == 0);
+// console.log(even);
+//reduce
+const sum = numbers.reduce((acc, currentNumber) => acc + currentNumber, 0);
+// console.log(sum);
+//forEach
+// numbers.forEach((number)=>console.log(number));
+
+//checking how much elements in the array follow a specific case
+//every()
+// console.log(numbers.every((number) => number % 2 == 0));
+//some()
+// console.log(numbers.some((number) => number % 2 == 0));
+
+//finding the first element which follows a specific condition
+// console.log(numbers.find((number) => number > 5));
+
+//checking whether a element exists in a array or not
+// console.log(numbers.includes(5));
+// console.log(numbers.includes(100));
+
+//making array from another source
+// console.log(Array.from('adarsh'));
+
+//flattening the array
+
+//flat()
+const arr1 = ['mon', 'tues', ['wed', 'thurs', ['fri', 'sat']], 'sun'];
+
+// console.log(arr1.flat()); //[ 'mon', 'tues', 'wed', 'thurs', [ 'fri', 'sat' ], 'sun' ]
+// console.log(arr1.flat(2)); //['mon', 'tues','wed', 'thurs','fri', 'sat','sun']
+
+//flattening and doing some operation
+
+//flatMap()
+
+const arr2 = [1, 2, [4, 5], 6, 7, [8]];
+console.log(arr2.flatMap((number)=> number));
