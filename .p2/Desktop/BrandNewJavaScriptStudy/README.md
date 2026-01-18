@@ -571,6 +571,12 @@
 
     - setInterval is used to repeatedly execute a function at a fixed interval.
 
+- ## Promises & Async/Await
+
+    **Promise**
+    - A promise is an object that may produce a single value some time in the future.
+    - A promise may be in one of 3 possible states: fulfilled, rejected, or pending.
+
 ## Map
 
 - A Map is a collection of keyed data items, similar to an object. However, the key difference (pun intended) is that in a Map, keys can be any type, not just strings. This means you can use objects, functions, and other data types as keys in a Map.
@@ -687,11 +693,11 @@
             - Allows manipulation of the browser's history stack.
             - Example:
 
-                                                                                                                                              ```js
-                                                                                                                                                  history.back(); // Go to the previous page
-                                                                                                                                                  history.forward(); // Go to the next page
-                                                                                                                                                  console.log(history.length); // Number of entries in the history stack
-                                                                                                                                              ```
+                                                                                                                                                    ```js
+                                                                                                                                                        history.back(); // Go to the previous page
+                                                                                                                                                        history.forward(); // Go to the next page
+                                                                                                                                                        console.log(history.length); // Number of entries in the history stack
+                                                                                                                                                    ```
 
         -   6.  document Object
             - While part of the DOM, the document object bridges the BOM and DOM, allowing access to the webpage content.
