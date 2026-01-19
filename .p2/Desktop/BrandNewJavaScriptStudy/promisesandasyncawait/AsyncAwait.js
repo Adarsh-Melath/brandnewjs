@@ -19,5 +19,22 @@ async function asyncFunction() {
     // console.log('hello');
 }
 
-
 asyncFunction();
+
+let promise2 = new Promise((res, rej) => {
+    setTimeout(() => {
+        res('Hey! this promise gotta rejected');
+    },5000);
+});
+
+async function asyncFunction2() {
+    try {
+        let result = await promise2;
+        console.log(result);
+    } catch (error) {
+        console.error(error);
+    }
+}
+
+
+asyncFunction2();

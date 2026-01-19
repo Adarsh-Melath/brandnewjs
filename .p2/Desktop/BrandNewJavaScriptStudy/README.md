@@ -593,6 +593,21 @@
     | `.catch(onRejected)`           | Appends a **rejection handler callback**                                                |
     | `.finally(onFinally)`          | Appends a handler that runs **regardless of resolve or reject**                         |
 
+    **What is async / await?**
+    - async / await is syntactic sugar over Promises that makes asynchronous code look and behave like synchronous code.
+
+    - `async` Keyword
+        - Used before a function
+
+        - Makes the function always return a Promise
+
+    - `await` Keyword
+        - Used inside an async function
+
+        - Pauses execution until the Promise resolves
+
+        - Returns the resolved value
+
 ## Map
 
 - A Map is a collection of keyed data items, similar to an object. However, the key difference (pun intended) is that in a Map, keys can be any type, not just strings. This means you can use objects, functions, and other data types as keys in a Map.
@@ -709,11 +724,11 @@
             - Allows manipulation of the browser's history stack.
             - Example:
 
-                                                                                                                                                      ```js
-                                                                                                                                                          history.back(); // Go to the previous page
-                                                                                                                                                          history.forward(); // Go to the next page
-                                                                                                                                                          console.log(history.length); // Number of entries in the history stack
-                                                                                                                                                      ```
+                                                                                                                                                        ```js
+                                                                                                                                                            history.back(); // Go to the previous page
+                                                                                                                                                            history.forward(); // Go to the next page
+                                                                                                                                                            console.log(history.length); // Number of entries in the history stack
+                                                                                                                                                        ```
 
         -   6.  document Object
             - While part of the DOM, the document object bridges the BOM and DOM, allowing access to the webpage content.
@@ -723,40 +738,6 @@
             console.log(document.title); // Current page title
             document.title = 'New Title'; // Change the title
             ```
-
-## Timers
-
-- use setTimeout to delay something, or setInterval to keep it running on a loop.
-
-## What is a Promise?
-
-- A Promise is an object that represents the eventual completion or failure of an asynchronous operation.
-    - A Promise acts as a placeholder for a value that will be available in the future.
-
-- Promise States
-    - A Promise can be in one of three states:
-
-    - Pending – Initial state (neither fulfilled nor rejected)
-
-    - Fulfilled – Operation completed successfully
-
-    - Rejected – Operation failed
-
-## What is async / await?
-
-- async / await is syntactic sugar over Promises that makes asynchronous code look and behave like synchronous code.
-
-- async Keyword
-    - Used before a function
-
-    - Makes the function always return a Promise
-
-- await Keyword
-    - Used inside an async function
-
-    - Pauses execution until the Promise resolves
-
-    - Returns the resolved value
 
 ## Modules
 
