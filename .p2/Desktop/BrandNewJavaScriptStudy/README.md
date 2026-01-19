@@ -620,10 +620,10 @@
 
     - Key Components of BOM - window Object - The global object representing the browser window. All BOM properties and methods are accessed through window. - Example:
 
-                      ```js
-                      console.log(window.innerWidth); // Width of the browser's viewport
-                      alert('Hello, BOM!'); // Displays an alert box
-                      ```
+                          ```js
+                          console.log(window.innerWidth); // Width of the browser's viewport
+                          alert('Hello, BOM!'); // Displays an alert box
+                          ```
 
     -   2.  navigator Object
         - Provides information about the browser and operating system.
@@ -701,38 +701,38 @@
     **Modules**
     - A module is just a piece of code in a file that you can call and use from other files. A modular design is the opposite of having all your project's code in one single file.
 
-## Map
+- ## Data Structures
 
-- A Map is a collection of keyed data items, similar to an object. However, the key difference (pun intended) is that in a Map, keys can be any type, not just strings. This means you can use objects, functions, and other data types as keys in a Map.
+    **Map**
+    - A Map is a collection of keyed data items, similar to an object. However, the key difference (pun intended) is that in a Map, keys can be any type, not just strings. This means you can use objects, functions, and other data types as keys in a Map.
 
-- Map Methods
+    - Map Methods
 
-| Properties / Methods | Description                                                               | Returns                   |
-| -------------------- | ------------------------------------------------------------------------- | ------------------------- |
-| `set(key, value)`    | Adds a key/value pair to a Map                                            | Map object (for chaining) |
-| `has(key)`           | Checks if a specific key is present in a Map                              | Boolean                   |
-| `get(key)`           | Returns a value by key, or `undefined` if the key does not exist          | Value                     |
-| `delete(key)`        | Removes a specific element from a Map by the key                          | Boolean                   |
-| `clear()`            | Removes all elements from a Map                                           | N/A                       |
-| `size`               | Returns the number of items in a Map                                      | Number                    |
-| `entries()`          | Returns an iterator for all key-value pairs as `[key, value]`             | MapIterator object        |
-| `keys()`             | Returns an iterator containing all keys in the Map                        | MapIterator object        |
-| `values()`           | Returns an iterator containing all values in the Map                      | MapIterator object        |
-| `forEach()`          | Iterates over the Map elements in insertion order and executes a callback | N/A                       |
+    | Properties / Methods | Description                                                               | Returns                   |
+    | -------------------- | ------------------------------------------------------------------------- | ------------------------- |
+    | `set(key, value)`    | Adds a key/value pair to a Map                                            | Map object (for chaining) |
+    | `has(key)`           | Checks if a specific key is present in a Map                              | Boolean                   |
+    | `get(key)`           | Returns a value by key, or `undefined` if the key does not exist          | Value                     |
+    | `delete(key)`        | Removes a specific element from a Map by the key                          | Boolean                   |
+    | `clear()`            | Removes all elements from a Map                                           | N/A                       |
+    | `size`               | Returns the number of items in a Map                                      | Number                    |
+    | `entries()`          | Returns an iterator for all key-value pairs as `[key, value]`             | MapIterator object        |
+    | `keys()`             | Returns an iterator containing all keys in the Map                        | MapIterator object        |
+    | `values()`           | Returns an iterator containing all values in the Map                      | MapIterator object        |
+    | `forEach()`          | Iterates over the Map elements in insertion order and executes a callback | N/A                       |
 
-## Set
+    **Set**
+    - A Set is a special collection type that holds unique values. In other words, it ensures that there are no duplicates in the collection. This is especially useful when you need to store data that must be unique, such as user IDs, or to filter out duplicates from a list.
 
-- A Set is a special collection type that holds unique values. In other words, it ensures that there are no duplicates in the collection. This is especially useful when you need to store data that must be unique, such as user IDs, or to filter out duplicates from a list.
+    - Set Methods
 
-- Set Methods
-
-| Properties / Methods | Description                                          | Returns            |
-| -------------------- | ---------------------------------------------------- | ------------------ |
-| `add(value)`         | Adds a new value to a Set                            | Set object         |
-| `has(value)`         | Checks for the presence of a specific value in a Set | Boolean            |
-| `size`               | Returns the element count of a Set                   | Number             |
-| `delete(value)`      | Removes the specified value from a Set               | Boolean            |
-| `clear()`            | Removes all values from a Set                        | N/A                |
-| `entries()`          | Returns all values in a Set as `[value, value]`      | SetIterator object |
-| `values()`           | Returns all elements in a Set (same as `keys()`)     | SetIterator object |
-| `forEach()`          | Iterates over the entire Set in insertion order      | N/A                |
+    | Properties / Methods | Description                                          | Returns            |
+    | -------------------- | ---------------------------------------------------- | ------------------ |
+    | `add(value)`         | Adds a new value to a Set                            | Set object         |
+    | `has(value)`         | Checks for the presence of a specific value in a Set | Boolean            |
+    | `size`               | Returns the element count of a Set                   | Number             |
+    | `delete(value)`      | Removes the specified value from a Set               | Boolean            |
+    | `clear()`            | Removes all values from a Set                        | N/A                |
+    | `entries()`          | Returns all values in a Set as `[value, value]`      | SetIterator object |
+    | `values()`           | Returns all elements in a Set (same as `keys()`)     | SetIterator object |
+    | `forEach()`          | Iterates over the entire Set in insertion order      | N/A                |
