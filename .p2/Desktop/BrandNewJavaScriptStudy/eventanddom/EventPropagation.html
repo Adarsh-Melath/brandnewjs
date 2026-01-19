@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .div {
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #outer {
+            background: yellow;
+            height: 300px;
+            width: 300px;
+        }
+
+        #inner {
+            background: blue;
+            height: 150px;
+            width: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="outer" class="div">
+        <div id="inner" class="div">
+            <button id="btn">Click Me</button>
+        </div>
+    </div>
+
+    <script>
+        const btn = document.querySelector('#btn');
+        const outerDiv = document.querySelector('#outer');
+        const innerDiv = document.querySelector('#inner');
+
+        btn.addEventListener('click', () => {
+                    event.stopPropagation();
+            btn.textContent = 'Clicked'
+            console.log('ButtonClicked');
+        })
+
+        outerDiv.addEventListener('click', () => {
+            outerDiv.style.background = 'green';
+            console.log('outer div')
+        })
+        innerDiv.addEventListener('click', (event) => {
+            innerDiv.style.background = 'red';
+            console.log('inner div');
+        })
+
+
+    </script>
+</body>
+
+</html>

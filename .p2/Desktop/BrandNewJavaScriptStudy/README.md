@@ -608,6 +608,88 @@
 
         - Returns the resolved value
 
+- ## Events and Dom
+
+    **DOM**
+    - A DOM, or Document Object Model, acts as a translator between Javascript and HTML. It’s not a different programming language but a built-in API for Javascript.
+
+    - Javascript cannot understand HTML elements, which is where DOM comes for help. The Document Object Model (DOM) turns illegible HTML and XML elements into objects, making it easier for Javascript to comprehend and access the material.
+
+    **Bom**
+    - The Browser Object Model (BOM) in JavaScript refers to the set of objects provided by the browser to interact with the browser environment outside of the webpage’s content. While the Document Object Model (DOM) handles the content of a webpage, the BOM allows developers to control the browser itself.
+
+    - Key Components of BOM - window Object - The global object representing the browser window. All BOM properties and methods are accessed through window. - Example:
+
+              ```js
+              console.log(window.innerWidth); // Width of the browser's viewport
+              alert('Hello, BOM!'); // Displays an alert box
+              ```
+
+    -   2.  navigator Object
+        - Provides information about the browser and operating system.
+        - Example:
+
+            ```js
+            console.log(navigator.userAgent); // Details about the browser and OS
+
+            console.log(navigator.language); // Language setting of the browser
+            ```
+
+    -   3.  screen Object
+        - Gives information about the user's screen properties, such as resolution and color depth.
+        - Example:
+
+            ```js
+            console.log(screen.width); // Width of the user's screen
+            console.log(screen.height); // Height of the user's screen
+            ```
+
+    -   4.  location Object
+        - Represents the URL of the current page and provides methods to navigate or reload the page.
+        - Example:
+
+        ```js
+        console.log(location.href); // Current URL
+        location.reload(); // Reload the page
+        location.replace('https://example.com'); // Navigate to a new page
+        ```
+
+    -   5.  history Object
+        - Allows manipulation of the browser's history stack.
+        - Example:
+
+        ```js
+        history.back(); // Go to the previous page
+        history.forward(); // Go to the next page
+        console.log(history.length); // Number of entries in the history stack
+        ```
+
+    -   6.  document Object
+        - While part of the DOM, the document object bridges the BOM and DOM, allowing access to the webpage content.
+        - Example:
+
+        ```js
+        console.log(document.title); // Current page title
+        document.title = 'New Title'; // Change the title
+        ```
+
+    **Event**
+    - JavaScript events are actions or occurrences that happen in the browser, such as a user clicking a button, hovering over an element, or a page finishing loading.
+
+    **Event Phases**
+    -   1. Event Capturing
+        - Event capturing is the first phase in the event flow process where the event is captured or detected at the highest level of the DOM hierarchy and then propagates down to the target element. Event capturing allows developers to intercept events before they reach their target, enabling global event handling and delegation. Practical use cases include implementing event delegation, validating user input, and applying consistent event handling across multiple elements.
+
+    ![Event Capturing](imagesforreadme/eventCapturing.png)
+    -   2. Event Targeting
+        - Event targeting, also known as the “at target” phase, occurs when the event reaches the target element that triggered it. During the targeting phase, event handlers attached directly to the target element are executed, allowing for specific actions or behaviors to be applied based on the event.
+          ![Event Target](imagesforreadme/eventTarget.png)
+
+    -   3. Event Bubbling
+        - Event bubbling is the final phase in the event flow process where the event, having been processed at the target element, propagates back up through the DOM hierarchy to the root element. Unlike event capturing, which starts from the top of the DOM tree and moves downward, event bubbling starts at the target element and moves upward. Practical implications include simplifying event handling by allowing for more concise code, enabling event delegation, and facilitating the creation of interactive components.
+
+    ![Event Bubbling](imagesforreadme/eventBubbling.png)
+
 ## Map
 
 - A Map is a collection of keyed data items, similar to an object. However, the key difference (pun intended) is that in a Map, keys can be any type, not just strings. This means you can use objects, functions, and other data types as keys in a Map.
@@ -644,100 +726,12 @@
 | `values()`           | Returns all elements in a Set (same as `keys()`)     | SetIterator object |
 | `forEach()`          | Iterates over the entire Set in insertion order      | N/A                |
 
-## DOM
-
-- A DOM, or Document Object Model, acts as a translator between Javascript and HTML. It’s not a different programming language but a built-in API for Javascript.
-
-- Javascript cannot understand HTML elements, which is where DOM comes for help. The Document Object Model (DOM) turns illegible HTML and XML elements into objects, making it easier for Javascript to comprehend and access the material.
-
-## Event
-
-- JavaScript events are actions or occurrences that happen in the browser, such as a user clicking a button, hovering over an element, or a page finishing loading.
-
-## Event Phases
-
--   1. Event Capturing
-    - Event capturing is the first phase in the event flow process where the event is captured or detected at the highest level of the DOM hierarchy and then propagates down to the target element. Event capturing allows developers to intercept events before they reach their target, enabling global event handling and delegation. Practical use cases include implementing event delegation, validating user input, and applying consistent event handling across multiple elements.
-
-![Event Capturing](imagesforreadme/eventCapturing.png)
-
--   2. Event Targeting
-    - Event targeting, also known as the “at target” phase, occurs when the event reaches the target element that triggered it. During the targeting phase, event handlers attached directly to the target element are executed, allowing for specific actions or behaviors to be applied based on the event.
-      ![Event Target](imagesforreadme/eventTarget.png)
-
--   3. Event Bubbling
-    - Event bubbling is the final phase in the event flow process where the event, having been processed at the target element, propagates back up through the DOM hierarchy to the root element. Unlike event capturing, which starts from the top of the DOM tree and moves downward, event bubbling starts at the target element and moves upward. Practical implications include simplifying event handling by allowing for more concise code, enabling event delegation, and facilitating the creation of interactive components.
-
-![Event Bubbling](imagesforreadme/eventBubbling.png)
-
 ## Event delegation
 
 - What is Event Delegation?
     - Event delegation refers to a technique in JavaScript where a single event listener is attached to a parent element rather than individual child elements. This parent element listens for events that bubble up from its child elements. When an event occurs, the parent can act upon it, often identifying the target child element from the event object.
 
     - Essentially, delegation takes advantage of the event bubbling phase in the DOM (Document Object Model), resulting in more efficient event handling.
-
-## Bom
-
-- The Browser Object Model (BOM) in JavaScript refers to the set of objects provided by the browser to interact with the browser environment outside of the webpage’s content. While the Document Object Model (DOM) handles the content of a webpage, the BOM allows developers to control the browser itself.
-
-- Key Components of BOM
-    - window Object
-        - The global object representing the browser window. All BOM properties and methods are accessed through window.
-            - Example:
-
-                ```js
-                console.log(window.innerWidth); // Width of the browser's viewport
-                alert('Hello, BOM!'); // Displays an alert box
-                ```
-
-        -   2.  navigator Object
-            - Provides information about the browser and operating system.
-            - Example:
-
-                ```js
-                console.log(navigator.userAgent); // Details about the browser and OS
-
-                console.log(navigator.language); // Language setting of the browser
-                ```
-
-        -   3.  screen Object
-            - Gives information about the user's screen properties, such as resolution and color depth.
-            - Example:
-
-                ```js
-                console.log(screen.width); // Width of the user's screen
-                console.log(screen.height); // Height of the user's screen
-                ```
-
-        -   4.  location Object
-            - Represents the URL of the current page and provides methods to navigate or reload the page.
-            - Example:
-
-            ```js
-            console.log(location.href); // Current URL
-            location.reload(); // Reload the page
-            location.replace('https://example.com'); // Navigate to a new page
-            ```
-
-        -   5.  history Object
-            - Allows manipulation of the browser's history stack.
-            - Example:
-
-                                                                                                                                                        ```js
-                                                                                                                                                            history.back(); // Go to the previous page
-                                                                                                                                                            history.forward(); // Go to the next page
-                                                                                                                                                            console.log(history.length); // Number of entries in the history stack
-                                                                                                                                                        ```
-
-        -   6.  document Object
-            - While part of the DOM, the document object bridges the BOM and DOM, allowing access to the webpage content.
-            - Example:
-
-            ```js
-            console.log(document.title); // Current page title
-            document.title = 'New Title'; // Change the title
-            ```
 
 ## Modules
 
