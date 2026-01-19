@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" placeholder="Enter your plan for today">
+    <br>
+    <br>
+    <button id="btn">Add</button>
+    <ul id="toList">
+
+    </ul>
+
+    <script>
+        const button = document.querySelector('#btn');
+        const inputElement = document.querySelector('input');
+        const todolist = document.querySelector('#toList');
+        btn.addEventListener('click', () => {
+            const task = document.createElement('li');
+            const inputValue = inputElement.value;
+            task.textContent = inputValue;
+            inputElement.value = '';
+            todolist.appendChild(task);
+        })
+
+        todolist.addEventListener('click', (event) => {
+            if (event.target.tagName === 'LI') {
+                event.target.remove();
+            }
+        })
+    </script>
+</body>
+
+</html>

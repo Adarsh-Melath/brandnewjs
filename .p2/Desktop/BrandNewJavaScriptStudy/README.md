@@ -620,10 +620,10 @@
 
     - Key Components of BOM - window Object - The global object representing the browser window. All BOM properties and methods are accessed through window. - Example:
 
-              ```js
-              console.log(window.innerWidth); // Width of the browser's viewport
-              alert('Hello, BOM!'); // Displays an alert box
-              ```
+                ```js
+                console.log(window.innerWidth); // Width of the browser's viewport
+                alert('Hello, BOM!'); // Displays an alert box
+                ```
 
     -   2.  navigator Object
         - Provides information about the browser and operating system.
@@ -690,6 +690,12 @@
 
     ![Event Bubbling](imagesforreadme/eventBubbling.png)
 
+    **Event delegation**
+    - What is Event Delegation?
+        - Event delegation refers to a technique in JavaScript where a single event listener is attached to a parent element rather than individual child elements. This parent element listens for events that bubble up from its child elements. When an event occurs, the parent can act upon it, often identifying the target child element from the event object.
+
+        - Essentially, delegation takes advantage of the event bubbling phase in the DOM (Document Object Model), resulting in more efficient event handling.
+
 ## Map
 
 - A Map is a collection of keyed data items, similar to an object. However, the key difference (pun intended) is that in a Map, keys can be any type, not just strings. This means you can use objects, functions, and other data types as keys in a Map.
@@ -725,13 +731,6 @@
 | `entries()`          | Returns all values in a Set as `[value, value]`      | SetIterator object |
 | `values()`           | Returns all elements in a Set (same as `keys()`)     | SetIterator object |
 | `forEach()`          | Iterates over the entire Set in insertion order      | N/A                |
-
-## Event delegation
-
-- What is Event Delegation?
-    - Event delegation refers to a technique in JavaScript where a single event listener is attached to a parent element rather than individual child elements. This parent element listens for events that bubble up from its child elements. When an event occurs, the parent can act upon it, often identifying the target child element from the event object.
-
-    - Essentially, delegation takes advantage of the event bubbling phase in the DOM (Document Object Model), resulting in more efficient event handling.
 
 ## Modules
 
