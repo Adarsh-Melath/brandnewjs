@@ -620,10 +620,10 @@
 
     - Key Components of BOM - window Object - The global object representing the browser window. All BOM properties and methods are accessed through window. - Example:
 
-                ```js
-                console.log(window.innerWidth); // Width of the browser's viewport
-                alert('Hello, BOM!'); // Displays an alert box
-                ```
+                      ```js
+                      console.log(window.innerWidth); // Width of the browser's viewport
+                      alert('Hello, BOM!'); // Displays an alert box
+                      ```
 
     -   2.  navigator Object
         - Provides information about the browser and operating system.
@@ -696,6 +696,11 @@
 
         - Essentially, delegation takes advantage of the event bubbling phase in the DOM (Document Object Model), resulting in more efficient event handling.
 
+- ## Modules & Strict Mode
+
+    **Modules**
+    - A module is just a piece of code in a file that you can call and use from other files. A modular design is the opposite of having all your project's code in one single file.
+
 ## Map
 
 - A Map is a collection of keyed data items, similar to an object. However, the key difference (pun intended) is that in a Map, keys can be any type, not just strings. This means you can use objects, functions, and other data types as keys in a Map.
@@ -731,7 +736,3 @@
 | `entries()`          | Returns all values in a Set as `[value, value]`      | SetIterator object |
 | `values()`           | Returns all elements in a Set (same as `keys()`)     | SetIterator object |
 | `forEach()`          | Iterates over the entire Set in insertion order      | N/A                |
-
-## Modules
-
-- A module is just a piece of code in a file that you can call and use from other files. A modular design is the opposite of having all your project's code in one single file.
