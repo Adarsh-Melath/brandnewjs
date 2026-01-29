@@ -4,8 +4,10 @@ let sum = 0;
 
 //without in built methods
 
-// for (let number of numbers) {
-//     sum += number;
-// }
+for (let number of numbers) {
+    if (number % 2 == 0) {
+        sum += number;
+    }
+}
 
-// console.log(sum);
+console.log(sum);
