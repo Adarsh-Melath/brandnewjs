@@ -10,4 +10,13 @@ for (let number of numbers) {
     }
 }
 
+//with built in methods
+
+sum = 0;
+numbers.forEach((number) => {
+    if (number % 2 == 0) {
+        sum += number;
+    }
+});
+
 console.log(sum);
