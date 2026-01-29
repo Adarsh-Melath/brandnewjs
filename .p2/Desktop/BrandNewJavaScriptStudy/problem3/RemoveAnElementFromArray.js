@@ -19,6 +19,10 @@ const removingNumber = Number(prompt('Enter the number to remove: '));
 //         numbers[i] = numbers[i + 1];
 //     }
 //     numbers.length--;
-}
+// }
+
+//with inbuilt method
+
+numbers.splice(numbers.indexOf(removingNumber), 1);
 
 console.log(numbers);
